@@ -1,7 +1,3 @@
-Here is a detailed **Good Practice Guideline for Data Producers and Researchers Intent on Publishing Data**, based on your brainstorming notes and expanded with key data management principles:
-
----
-
 ### **Good Practice Guideline for Publishing Data in Field Phenotyping**
 
 Publishing data is a vital step in making your research accessible, reusable, and visible to the broader scientific community. Proper data management not only ensures that your work is recognized, but it also allows others to build upon it, increasing its impact. Follow this comprehensive guide to ensure that your data is structured, understandable, and prepared for long-term accessibility.
