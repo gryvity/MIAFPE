@@ -1,5 +1,5 @@
 # MIAFPE
-Minimum Information about Field Phenotyping
+Minimum Information about Field Phenotyping Experiments
 
 
 ## Abstract
