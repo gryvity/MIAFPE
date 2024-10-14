@@ -1,0 +1,19 @@
+{
+    "@context" : {
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "schema" : "https://schema.org/",
+        "sosa" : "http://www.w3.org/ns/sosa"
+    },
+
+    "{vocabref}:{vocab}" : {
+        "schema:isPartOf" : ["{ref}"],
+        "schema:hasPart" : ["{ref}"],
+
+        "@type" : "{type}",
+        "@id" : "{id}",
+        "@value" : "{value}",
+
+        "rdfs:label" : "{label}",
+        "rdfs:comment" : "{comments and/or examples}"
+    }
+}
