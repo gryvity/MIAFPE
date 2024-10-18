@@ -3,7 +3,32 @@
 ***Author:** Lars Grygosch ([**IGB-2**](https://www.fz-juelich.de/en/ibg/ibg-2) Forschungszentrum Juelich)\
 **Contact:** l.grygosch@fz-juelich.de\
 **Project-Background:** [**FAIRagro**](https://fairagro.net/) - Task Area 1 - [Use Case 5](https://fairagro.net/mitmachen/unsere-use-cases/use-case-5/)\
+**Project URL:** https://github.com/gryvity/MIAFPE/tree/main/MIAFPE \
 **Disclaimer:** This Project is a living Document and is meant to provide transperence of my ongoing work. Please feel free to reach out to me with your thoughts, critic or questions. Also be aware this project is still under developement, therefore is missing some content*
+
+***Metadata:** URL*
+
+#### License    
+
+...      
+
+
+---
+
+## Table of Content
+
+- [Motivation](#motivation)
+- [Project Overview](#project-overview)
+- [How To...?](#how-to)
+- [Use Case 5](#use-case-5)
+    - [Abstract](#abstract)
+    - [Fostering a Data Culture](#fostering-a-data-culture-within-the-field-phenotyping-community)
+    - [Benchmark](#benchmark)
+    - [Minimum Information about Field Phenotyping Experiments](#minimum-information-about-field-phenotyping-experiments)
+        - [MIAPPE and SSN/SOSA](#miappe-and-ssnsosa)
+        - [Linked Data](#linked-data)
+- [Enhancing Findability](#enhancing-findability)
+- [Literature](#literature)
 
 
 ## Motivation
@@ -14,7 +39,7 @@ critical for enhancing the findability, accessibility, interoperability, and reu
 dataset that exemplifies typical field phenotypic and remote sensing data, supported by templates and guidelines for effective data management.
 
 
-## Content of this Project
+## Project Overview
 
 This is thought to be the global Hub of my project within the FAIRagro Use Case 5. Thus the progress to meet the milestones is documented here. I will try to give me best to keep this project nice and clean, but be aware you are visiting a construction site. That means there might be some mess for the time being.
 
@@ -33,12 +58,11 @@ Furthermore I will seize the opportunity to increase the visibility of Data. Wit
 - Is a converter from MIAPPE to Linked Data with the high flexibility in choice of Vocabulary needed?
 - How to ensure FAIR data or at least how to increase FAIRness?
 - Is the given Format of use for the differen [FAIRagro](https://fairagro.net/ueber-uns/unsere-task-areas/) Task Areas
-- How to increase findability of data sets in field (PhD Project - similarity search)?
+- How to increase findability of data sets in field
 
-## How To?
+## How To...?
 
 
-## License
 
 
 
@@ -81,8 +105,12 @@ Lorem Ipsum...
 
 [MIAFPE](MIAFPE\README.md)
 
+#### MIAPPE and SSN/SOSA
+
+#### Linked Data
 
 
+## Enhancing Findability
 
 ## Literature
 
