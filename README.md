@@ -6,7 +6,7 @@
 **Project URL:** https://github.com/gryvity/MIAFPE/tree/main/MIAFPE \
 **Disclaimer:** This Project is a living Document and is meant to provide transperence of my ongoing work. Please feel free to reach out to me with your thoughts, critic or questions. Also be aware this project is still under developement, therefore is missing some content*
 
-***Metadata:** URL*
+***Metadata:** COMING SOON*
 
 #### License    
 
