@@ -5,6 +5,14 @@
 CHeck
 https://github.com/w3c/sdw-sosa-ssn
 
+Further Links:
+- https://www.ogc.org/
+- https://w3c.github.io/sdw/ssn-usage/
+- https://www.w3.org/TR/vocab-ssn/
+
+Example of usage:
+- http://www.w3.org/ns/sosa/Sensor
+
 ## Motivation
 While MIAPPE provides a good framework for documenting plant phenotyping experiments, it currently lacks the capacity to include remote sensing data, a key component in modern large-scale phenotyping. By integrating SSN/SOSA, this prototype introduces Sensors and Platforms into the MIAPPE format, improving the documentation of non-invasive methods like drones and satellite imagery. Although machine learning models are not yet implemented, there is a plan for their inclusion in future versions to fully capture the complexity of automated phenotyping workflows.
 
@@ -19,7 +27,7 @@ Therefor MIAFPE just builds on the existing MIAPPE format as a core.
 
 The Semantic Sensor Network (SSN) ontology is an ontology for describing observations, in terms of the procedures executed and sensors used, the properties observed, which relate to the features (entities) of interest.
 
-[Open Geospatial Consortium (OGC)](https://www.ogc.org/)
+[Open Geospatial Consortium (OGC)](v)
 
 
 | <img src="..\references\imgs\miappe_extension_v1.png" width="350"/> |
@@ -39,38 +47,6 @@ The Semantic Sensor Network (SSN) ontology is an ontology for describing observa
 - Data File
 - Sensor
 - Platform
-
-
-
-
-## Sensors
-
-http://www.w3.org/ns/sosa/Sensor
-
-Additional useful Resource for using SOSA
-https://w3c.github.io/sdw/ssn-usage/
-
-![miappe extension version 1](..\references\imgs\miappe_extension_v1.png)
-
-
-| Field # | MIAFPE | Desc | Ontology Ref |
-| - | - | - | - |
-| 1 | Observed Variable | list of study-IDs | |
-| 2 | Sensor ID | just any identification of the sensor in use (e.g. inventory-number,  Serial Number, or a given unique name) |
-| 3 | Sensor Type | Describes the Type of Sensor | |
-| 4 | Manufacturer | | |
-| 5 | Model/Version | | |
-| 6 | Platform | Links the Sensor to a Platform | |
-| 7 | 
-
-
-Some Notes for me
-
-- How is the Observation in MIAPPE linked to the FeatureOfInterest and the Procedure
-- Is Procedure a missing Link for the inclusion of Algorithms
-- Namespace for Sensortypes is yet to be found
-
-## Platforms
 
 
 
