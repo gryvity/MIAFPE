@@ -30,7 +30,7 @@ The Semantic Sensor Network (SSN) ontology is an ontology for describing observa
 [Open Geospatial Consortium (OGC)](v)
 
 
-| <img src="..\references\imgs\miappe_extension_v1.png" width="350"/> |
+| <img src="..\references\imgs\miappe_extension_v1.png" width="500"/> |
 | :--: |
 | MIAPPE extended with SNN/SOSA. Observed Variable is linked to Sensor in a new Sheet in the MIAPPE Excel Checklist. |
 
@@ -48,7 +48,9 @@ The Semantic Sensor Network (SSN) ontology is an ontology for describing observa
 - Sensor
 - Platform
 
-
+| <img src="..\references\imgs\MIAFPE_DataModelMAP_Version1.2.png"/> |
+| :--: |
+| MIAPPE extended with SNN/SOSA. Observed Variable is linked to Sensor in a new Sheet in the MIAPPE Excel Checklist. |
 
 
 ## Future Implementation
