@@ -3,4 +3,6 @@ MIAPPE_extension/MIAPPEv1.1.xlsx
 drafts/
 literature/pdf/
 TODOs.md
+datalab/*
+!datalab/datalabcontrol.ipynb
 
