@@ -1,3 +1,0 @@
-# Benchmark
-
-## Annotated Resaerch Context

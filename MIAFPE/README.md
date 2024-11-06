@@ -1,25 +1,179 @@
 # Minimum Information about Field Phenotyping Experiments
 
-## Personal Notes
+**Author:** Lars Grygosch ([**IGB-2**](https://www.fz-juelich.de/en/ibg/ibg-2) Forschungszentrum Juelich)\
+**Contact:** l.grygosch@fz-juelich.de\
+**Project-Background:** [**FAIRagro**](https://fairagro.net/) - Task Area 1 - [Use Case 5](https://fairagro.net/mitmachen/unsere-use-cases/use-case-5/)\
+**Project URL:** https://github.com/gryvity/MIAFPE/tree/main/MIAFPE/MIAFPE \
+**Disclaimer:** This Project's README is a living Document and is meant to provide transperence of my ongoing work. Please feel free to reach out to me with your thoughts, critic or questions. Also be aware this project is still under developement, therefore is missing some content*
 
-CHeck
-https://github.com/w3c/sdw-sosa-ssn
+## Version Infomation
 
-Further Links:
-- https://www.ogc.org/
-- https://w3c.github.io/sdw/ssn-usage/
-- https://www.w3.org/TR/vocab-ssn/
+The current Version of the MIAFPE project includes the following:
 
-Example of usage:
-- http://www.w3.org/ns/sosa/Sensor
+- Investigation
+- Study
+- Data Files
+- Observation Unit
+- Observed Variable
+- Sensor
+- Platform
+- Data File
+
+
+Recent Changes:
+
+- It is the first iteration
+
+Planned Steps:
+
+- 
+
+## Abstract
+
+## Table of Contents
+
+- [Introduction](#introduction)
+
+  - [MIAPPE](#miappe)
+
+  - [Motivation for a New Standard](#motivation-for-a-new-standard)
+    - [Limitations of MIAPPE for Modern Field Phenotyping](#limitations-of-miappe-for-modern-field-phenotyping)
+    - [Advances in Remote Sensing, Sensor Technology, and Machine Learning](#advances-in-remote-sensing-sensor-technology-and-machine-learning)
+    - [Necessity of Expanded Metadata for Comprehensive Documentation](#necessity-of-expanded-metadata-for-comprehensive-documentation)
+  - [Outlook of the Work](#outlook-of-the-work)
+    - [Overview of Upcoming Sections](#overview-of-upcoming-sections)
+    - [Key Challenges Addressed in the Work](#key-challenges-addressed-in-the-work)
+
+- [Integrating SSN/SOSA to MIAPPE](#integrating-ssnsosa-to-miappe)
+  - [SSN/SOSA](#ssnsosa)
+    - [Introduction to SOSA and SSN Ontologies](#introduction-to-sosa-and-ssn-ontologies)
+    - [Relationship Between SOSA and SSN](#relationship-between-sosa-and-ssn)
+  - [SOSA Datamap and its Inclusion in MIAPPE](#sosa-datamap-and-its-inclusion-in-miappe)
+    - [Overview of the SOSA Data Map](#overview-of-the-sosa-data-map)
+    - [Approach to Integration with MIAPPE](#approach-to-integration-with-miappe)
+    - [Key Challenges in Harmonizing Structures](#key-challenges-in-harmonizing-structures)
+    - [Ensuring Metadata Completeness and Usability](#ensuring-metadata-completeness-and-usability)
+
+- [MIAFPE: An Extended MIAPPE for Field Phenotyping](#miafpe-an-extended-miappe-for-field-phenotyping)
+  - [The MIAFPE Data Model](#the-miafpe-data-model)
+    - [Overview of the Extended Data Model](#overview-of-the-extended-data-model)
+    - [Examples and Use Cases in Field Phenotyping](#examples-and-use-cases-in-field-phenotyping)
+  - [Investigation](#investigation)
+  - [Study](#study)
+  - [Person](#person)
+  - [Data File](#data-file)
+  - [Observation Unit](#observation-unit)
+  - [Observed Variable](#observed-variable)
+  - [Method](#method)
+  - [Sensor](#sensor)
+  - [Platform](#platform)
+  - [Sample](#sample)
+  - [Environment](#environment)
+  - [Experimental Factor](#experimental-factor)
+  - [Event](#event)
+  - [Biological Material](#biological-material)
+
+- [Reflection and Interoperability](#reflection-and-interoperability)
+  - [Interaction with ARC (Annotated Research Context)](#interaction-with-arc-annotated-research-context)
+    - [Introduction to ARC and FAIRagro Consortium](#introduction-to-arc-and-fairagro-consortium)
+    - [Potential for Integration with MIAFPE](#potential-for-integration-with-miafpe)
+    - [Future Directions and Interoperability Prospects](#future-directions-and-interoperability-prospects)
+
+- [References](#references)
+
+
+
+## Introduction
+### MIAPPE
+
+
+- https://doi.org/10.1111/nph.16544
+- https://doi.org/10.1038/s41597-023-02364-z
+- https://www.miappe.org/
+- https://doi.org/10.1093/jxb/ery006
+- https://doi.org/10.1186/s13007-016-0144-4
+
+
+Krajewski P, Chen D, Ćwiek H, van Dijk AD, Fiorani F, Kersey P, Klukas C, Lange M, Markiewicz A, Nap JP, van Oeveren J, Pommier C, Scholz U, van Schriek M, Usadel B, Weise S. Towards recommendations for metadata and data handling in plant phenotyping. J Exp Bot. 2015 Sep;66(18):5417-27. doi: 10.1093/jxb/erv271. Epub 2015 Jun 4. Erratum in: J Exp Bot. 2018 Mar 24;69(7):1819. doi: 10.1093/jxb/ery006. PMID: 26044092.
+
+Observing plant morphology and physiology has long provided critical insights into taxonomy and plant breeding, helping breeders select plants suited to specific environments, thereby enhancing productivity. Historically, these observations formed the basis of plant taxonomy, involving the systematic identification, description, and classification of species based on significant morphological and structural traits. Over time, plant phenotyping evolved into its own discipline within plant science, fueled by advancements in sensor technology and data processing capabilities. With the development of high-resolution sensor systems, data acquisition became faster, more efficient, and increasingly accessible, as compact sensors could be mounted on various platforms, such as UAVs, aircraft, or satellites. These innovations have enabled large-scale observation, making high-throughput data acquisition feasible and more cost-effective.
+
+Plant traits are influenced not only by the plant’s genetics but also by complex interactions with environmental conditions, resulting in diverse and heterogeneous data. In the modern context, “phenotyping” encompasses any quantitative or qualitative measurement of plant characteristics, spanning levels from single cells to whole ecosystems (Dhondt et al., 2013). This breadth of scope requires a range of experimental designs and data collection approaches. As noted by Krajewski et al. (2015), while various standards and controlled vocabularies were developed to describe individual plant traits, there was no standardized framework for documenting phenotyping experiments as a whole. The absence of such standards hindered the integration, comparison, and reuse of phenotypic data across studies and platforms.
+
+MIAPPE (Minimum Information About Plant Phenotyping Experiments) was developed to address these gaps, inspired by the "Minimum Information" approach used successfully in other biological fields, such as MIAME for microarray experiments and MIAPE for proteomics. This approach defines a checklist of essential attributes that need to be recorded to facilitate data deposition, storage, and reuse, without mandating that all attributes be filled in every case. Instead, the checklist serves as a guide, ensuring that crucial information is not omitted, thereby supporting interoperability and data discovery. As Krajewski et al. outlined, this “minimum information” framework is supported by a number of bioscience standards registered on platforms like Biosharing (now FAIRsharing), which provide centralized access to metadata standards, including MIAPPE.
+
+In 2016, the initial version of MIAPPE was released, consolidating best practices for the documentation and organization of plant phenotyping data within a comprehensive metadata framework. MIAPPE v1 introduced a structured list of metadata fields spanning key aspects of phenotyping experiments: investigation, study, biological material, observation unit, observed variables, and data files. Additionally, this version provided compatibility with the ISA-Tab format, facilitating integration with other datasets in the life sciences. The ISA-Tab Phenotyping Configuration, designed specifically for MIAPPE, enables researchers to organize and structure metadata for plant phenotyping experiments in a flexible and adaptable format. Ćwiek-Kupczyńska et al. (2016) demonstrated the practical implementation of MIAPPE in multiple systems, highlighting how ISA-Tab-formatted data structures could standardize metadata collection and enhance data interoperability across platforms (https://doi.org/10.1186/s13007-016-0144-4).
+
+With increasing recognition of the importance of the FAIR (Findable, Accessible, Interoperable, Reusable) data principles, MIAPPE was further refined in its 2020 update to version 1.1 (Papoutsoglou et al., 2020). This update incorporated controlled vocabularies and ontologies to improve data consistency, with extended fields and refined descriptors to better support a range of phenotyping studies. Version 1.1 of MIAPPE not only addresses previous limitations in documenting metadata but also enhances compatibility with platforms such as the Breeding API (BrAPI), ISA-Tools, and other widely adopted data infrastructures in the plant sciences. The updated standard facilitates precise annotation of traits, conditions, and experimental setups, enabling datasets to be more seamlessly integrated into phenomics research pipelines. Today, MIAPPE is utilized across a broad spectrum of research projects and is actively embedded in several plant science databases and analysis tools, promoting the accessibility and reusability of phenotypic data.
+
+As MIAPPE continues to evolve, it addresses the challenges posed by emerging data sources, particularly from remote sensing and high-throughput imaging. The development of v1.1 marked a substantial step towards achieving FAIR compliance, fostering data sharing and reuse across the plant science community. Through a community-driven approach, MIAPPE has become a foundational standard for phenotyping data, empowering researchers to document their experiments comprehensively and consistently, ensuring that datasets remain relevant and valuable for future studies.
+
+
+
+### Motivation for a New Standard
+#### Limitations of MIAPPE for Modern Field Phenotyping
+#### Advances in Remote Sensing, Sensor Technology, and Machine Learning
+#### Necessity of Expanded Metadata for Comprehensive Documentation
+
+### Outlook of the Work
+#### Overview of Upcoming Sections
+#### Key Challenges Addressed in the Work
+
+## Integrating SSN/SOSA to MIAPPE
+### SSN/SOSA
+#### Introduction to SOSA and SSN Ontologies
+#### Relationship Between SOSA and SSN
+
+### SOSA Datamap and its Inclusion in MIAPPE
+#### Overview of the SOSA Data Map
+#### Approach to Integration with MIAPPE
+#### Key Challenges in Harmonizing Structures
+#### Ensuring Metadata Completeness and Usability
+
+## MIAFPE: An Extended MIAPPE for Field Phenotyping
+### The MIAFPE Data Model
+#### Overview of the Extended Data Model
+#### Examples and Use Cases in Field Phenotyping
+
+### Investigation
+### Study
+### Person
+### Data File
+### Observation Unit
+### Observed Variable
+### Method
+### Sensor
+### Platform
+### Sample
+### Environment
+### Experimental Factor
+### Event
+### Biological Material
+
+## Reflection and Interoperability
+### Interaction with ARC (Annotated Research Context)
+
+https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/implementation/AnnotatedResearchContext.html
+
+
+#### Introduction to ARC and FAIRagro Consortium
+#### Potential for Integration with MIAFPE
+#### Future Directions and Interoperability Prospects
+
+## References
+
+- Minimum Information About Plant Phenotyping Experiments, Website last visited 2024-11-06, https://www.miappe.org/
+
+
+
+# 
+## Introduction
 
 ## Motivation
 While MIAPPE provides a good framework for documenting plant phenotyping experiments, it currently lacks the capacity to include remote sensing data, a key component in modern large-scale phenotyping. By integrating SSN/SOSA, this prototype introduces Sensors and Platforms into the MIAPPE format, improving the documentation of non-invasive methods like drones and satellite imagery. Although machine learning models are not yet implemented, there is a plan for their inclusion in future versions to fully capture the complexity of automated phenotyping workflows.
 
 
-Minimum Information about Field Phenotyping Experiments is going to extend the [MIAPPE](https://github.com/MIAPPE) Metadata standard with additional information from the Domain of Remote Sensing and Computer Science in order to be well suited for Field Phenotyping Experiments. 
-
-Therefor MIAFPE just builds on the existing MIAPPE format as a core.
+The new Metadata Checklist MIAFPE (Minimum Information about Field Phenotyping Experiments) is going to extend the [MIAPPE](https://github.com/MIAPPE) Metadata standard with additional information from the Domain of Remote Sensing and Computer Science in order to be well suited for Field Phenotyping Experiments. The MIAPPE Checklist format will 
 
 ## Integrating SSN/SOSA
 
@@ -27,7 +181,7 @@ Therefor MIAFPE just builds on the existing MIAPPE format as a core.
 
 The Semantic Sensor Network (SSN) ontology is an ontology for describing observations, in terms of the procedures executed and sensors used, the properties observed, which relate to the features (entities) of interest.
 
-[Open Geospatial Consortium (OGC)](v)
+[Open Geospatial Consortium (OGC)](https://www.ogc.org/)
 
 
 | <img src="..\references\imgs\miappe_extension_v1.png"/> |
@@ -48,11 +202,11 @@ The Semantic Sensor Network (SSN) ontology is an ontology for describing observa
 - Sensor
 - Platform
 
-| <img src="..\references\imgs\MIAFPE_DataModelMAP_Version1.2.png"/> |
+| <img src="..\references\imgs\MIAFPE_DataModelMAP_Version1.2.jpg"/> |
 | :--: |
 | MIAPPE extended with SNN/SOSA. Observed Variable is linked to Sensor in a new Sheet in the MIAPPE Excel Checklist. |
 
-
+![test](..\references\imgs\MIAFPE_DataModelMAP_Version1.2.jpg)
 ## Future Implementation
 
 - Algorithms and Models
@@ -293,3 +447,14 @@ NOT IMPLEMENTED YET
 - Description
 - Observed Variable
 
+# Links and Literature
+
+https://github.com/w3c/sdw-sosa-ssn
+
+Further Links:
+- https://www.ogc.org/
+- https://w3c.github.io/sdw/ssn-usage/
+- https://www.w3.org/TR/vocab-ssn/
+
+Example of usage:
+- http://www.w3.org/ns/sosa/Sensor
