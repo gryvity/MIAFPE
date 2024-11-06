@@ -92,13 +92,13 @@ Planned Steps:
 - https://www.miappe.org/
 - https://doi.org/10.1093/jxb/ery006
 - https://doi.org/10.1186/s13007-016-0144-4
+- https://doi.org/10.1016/j.tplants.2013.04.008 
 
 
-Krajewski P, Chen D, Ćwiek H, van Dijk AD, Fiorani F, Kersey P, Klukas C, Lange M, Markiewicz A, Nap JP, van Oeveren J, Pommier C, Scholz U, van Schriek M, Usadel B, Weise S. Towards recommendations for metadata and data handling in plant phenotyping. J Exp Bot. 2015 Sep;66(18):5417-27. doi: 10.1093/jxb/erv271. Epub 2015 Jun 4. Erratum in: J Exp Bot. 2018 Mar 24;69(7):1819. doi: 10.1093/jxb/ery006. PMID: 26044092.
 
-Observing plant morphology and physiology has long provided critical insights into taxonomy and plant breeding, helping breeders select plants suited to specific environments, thereby enhancing productivity. Historically, these observations formed the basis of plant taxonomy, involving the systematic identification, description, and classification of species based on significant morphological and structural traits. Over time, plant phenotyping evolved into its own discipline within plant science, fueled by advancements in sensor technology and data processing capabilities. With the development of high-resolution sensor systems, data acquisition became faster, more efficient, and increasingly accessible, as compact sensors could be mounted on various platforms, such as UAVs, aircraft, or satellites. These innovations have enabled large-scale observation, making high-throughput data acquisition feasible and more cost-effective.
+With the development of high-resolution sensor systems, data acquisition became faster, more efficient, and increasingly accessible, as compact sensors could be mounted on various platforms, such as UAVs, aircraft, or satellites. These innovations have enabled large-scale observation, making high-throughput data acquisition feasible and more cost-effective.
 
-Plant traits are influenced not only by the plant’s genetics but also by complex interactions with environmental conditions, resulting in diverse and heterogeneous data. In the modern context, “phenotyping” encompasses any quantitative or qualitative measurement of plant characteristics, spanning levels from single cells to whole ecosystems (Dhondt et al., 2013). This breadth of scope requires a range of experimental designs and data collection approaches. As noted by Krajewski et al. (2015), while various standards and controlled vocabularies were developed to describe individual plant traits, there was no standardized framework for documenting phenotyping experiments as a whole. The absence of such standards hindered the integration, comparison, and reuse of phenotypic data across studies and platforms.
+Plant traits are influenced not only by the plant’s genetics but also by complex interactions with environmental conditions, resulting in diverse and heterogeneous data. In the modern context, “phenotyping” encompasses any quantitative or qualitative measurement of plant characteristics, spanning levels from single cells to whole ecosystems ([Dhondt et al., 2013](https://doi.org/10.1016/j.tplants.2013.04.008)). This breadth of scope requires a range of experimental designs and data collection approaches. As noted by Krajewski et al. (2015), while various standards and controlled vocabularies were developed to describe individual plant traits, there was no standardized framework for documenting phenotyping experiments as a whole. The absence of such standards hindered the integration, comparison, and reuse of phenotypic data across studies and platforms.
 
 MIAPPE (Minimum Information About Plant Phenotyping Experiments) was developed to address these gaps, inspired by the "Minimum Information" approach used successfully in other biological fields, such as MIAME for microarray experiments and MIAPE for proteomics. This approach defines a checklist of essential attributes that need to be recorded to facilitate data deposition, storage, and reuse, without mandating that all attributes be filled in every case. Instead, the checklist serves as a guide, ensuring that crucial information is not omitted, thereby supporting interoperability and data discovery. As Krajewski et al. outlined, this “minimum information” framework is supported by a number of bioscience standards registered on platforms like Biosharing (now FAIRsharing), which provide centralized access to metadata standards, including MIAPPE.
 
@@ -111,9 +111,11 @@ As MIAPPE continues to evolve, it addresses the challenges posed by emerging dat
 
 
 ### Motivation for a New Standard
-#### Limitations of MIAPPE for Modern Field Phenotyping
-#### Advances in Remote Sensing, Sensor Technology, and Machine Learning
-#### Necessity of Expanded Metadata for Comprehensive Documentation
+
+
+While MIAPPE offers a solid foundation for documenting plant phenotyping experiments, it currently lacks comprehensive support for remote sensing data, a critical element in large-scale, modern phenotyping. Integrating the SSN/SOSA ontologies within MIAPPE enables the inclusion of Sensors and Platforms, facilitating more precise documentation of non-invasive data collection methods, such as UAVs (drones), aircraft, and satellite-based imagery. These additions enhance MIAPPE's ability to capture a broader range of observational data, which is essential for high-throughput, field-based studies.
+
+To address this need, the new MIAFPE (Minimum Information about Field Phenotyping Experiments) Metadata Checklist aims to extend the MIAPPE Metadata standard. MIAFPE will incorporate remote sensing and computer science advancements, creating a metadata framework tailored for field phenotyping applications. Additionally, while machine learning models are not yet integrated, their inclusion is planned for future updates, allowing MIAFPE to comprehensively document the increasingly complex workflows of automated phenotyping.
 
 ### Outlook of the Work
 #### Overview of Upcoming Sections
@@ -168,6 +170,12 @@ https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/implementation/AnnotatedR
 
 # 
 ## Introduction
+
+Early MIAPPE - recommendations to address three different aspects of standardization. 
+
+1) definition of attributes that may be necessary to describe each experiment appropriate for deposition and storage in an archive or publication in form of a checklist. Not each attribute is mandetory. it follows the "minimum information" approach such as MIAME (Minimum Information about Microarry Experiment), MIAPE (Minimum Information about a Proteomics Experiment), CIMR (Core Information for Metabolomics Reporting) or MIxS (Minimum Information about any Sequence Specifications).
+2) Rely on annotation with respect to publicly available ontologies and vocaubularies, such as Plant Ontology or Crop Ontology.
+3) To ensure proper use and interoperability of data sets the proper format is needed. Formats that are used in similar applications are CSV, XML, RDF, MAGE-TAB or ISA-Tab. 
 
 ## Motivation
 While MIAPPE provides a good framework for documenting plant phenotyping experiments, it currently lacks the capacity to include remote sensing data, a key component in modern large-scale phenotyping. By integrating SSN/SOSA, this prototype introduces Sensors and Platforms into the MIAPPE format, improving the documentation of non-invasive methods like drones and satellite imagery. Although machine learning models are not yet implemented, there is a plan for their inclusion in future versions to fully capture the complexity of automated phenotyping workflows.
