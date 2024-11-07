@@ -8,25 +8,48 @@
 
 ## Version Infomation
 
+[MIAFPE.xlsx](MIAPPE\MIAFPE.xlsx) in the current version is a reduced version of MIAPPE. 
+
+| <img src="..\references\imgs\MIAFPE_DataModelMAP_Version1.2.jpg"/> |
+| :--: |
+| MIAPPE extended with SNN/SOSA. Observed Variable is linked to Sensor in a new Sheet in the MIAPPE Excel Checklist. |
+
+
 The current Version of the MIAFPE project includes the following:
 
 - Investigation
 - Study
 - Data Files
-- Observation Unit
+- Observation Unit (change of Attribute "Biological Material" to "Feature of Interest")
 - Observed Variable
 - Sensor
 - Platform
 - Data File
 
 
-Recent Changes:
-
-- It is the first iteration
-
 Planned Steps:
 
-- 
+- Complete Sheets. Final Version should consist of:
+  - Investigation
+  - Study
+  - Data Files
+  - Observation Unit
+  - Observed Variable
+  - Sensor
+  - Platform
+  - Data File
+  - Algorithms and Models (maybe within SOSA-Conform Method-Class)
+  - Sample
+  - Person
+  - Event
+  - Experimental Factor
+  - Biological Material
+
+- Despite a few extra classes some of the older classes need to get extra attributes
+- New Examples
+- An overview site guiding through the process of finding Terms in Ontologies or controlled Vocabularies
+- A tool to convert Checklist to JSON-LD format with extended Information
+- Link to ARC
 
 ## Abstract
 
@@ -56,22 +79,21 @@ Planned Steps:
 
 - [MIAFPE: An Extended MIAPPE for Field Phenotyping](#miafpe-an-extended-miappe-for-field-phenotyping)
   - [The MIAFPE Data Model](#the-miafpe-data-model)
-    - [Overview of the Extended Data Model](#overview-of-the-extended-data-model)
-    - [Examples and Use Cases in Field Phenotyping](#examples-and-use-cases-in-field-phenotyping)
-  - [Investigation](#investigation)
-  - [Study](#study)
-  - [Person](#person)
-  - [Data File](#data-file)
-  - [Observation Unit](#observation-unit)
-  - [Observed Variable](#observed-variable)
-  - [Method](#method)
-  - [Sensor](#sensor)
-  - [Platform](#platform)
-  - [Sample](#sample)
-  - [Environment](#environment)
-  - [Experimental Factor](#experimental-factor)
-  - [Event](#event)
-  - [Biological Material](#biological-material)
+  - [MIAFPE Checklist](#miafpe-checklist)
+    - [Investigation](#investigation)
+    - [Study](#study)
+    - [Person](#person)
+    - [Data File](#data-file)
+    - [Observation Unit](#observation-unit)
+    - [Observed Variable](#observed-variable)
+    - [Method](#method)
+    - [Sensor](#sensor)
+    - [Platform](#platform)
+    - [Sample](#sample)
+    - [Environment](#environment)
+    - [Experimental Factor](#experimental-factor)
+    - [Event](#event)
+    - [Biological Material](#biological-material)
 
 - [Reflection and Interoperability](#reflection-and-interoperability)
   - [Interaction with ARC (Annotated Research Context)](#interaction-with-arc-annotated-research-context)
@@ -134,23 +156,158 @@ To address this need, the new MIAFPE (Minimum Information about Field Phenotypin
 
 ## MIAFPE: An Extended MIAPPE for Field Phenotyping
 ### The MIAFPE Data Model
-#### Overview of the Extended Data Model
-#### Examples and Use Cases in Field Phenotyping
 
-### Investigation
-### Study
-### Person
-### Data File
-### Observation Unit
-### Observed Variable
-### Method
-### Sensor
-### Platform
-### Sample
-### Environment
-### Experimental Factor
-### Event
-### Biological Material
+
+### MIAFPE Checklist
+Some of the Sheets and their representive attributes are unchanged from the MIAPPE version 1.1, but are mentioned above for the sake of completeness. 
+
+The examples in the MIAPPE might differ from versio 1.1 give researchers operating platforms and utilizing remote sensing a feeling of what to fill in.
+
+#### Investigation
+
+Investigations are research programmes with defined aims. They can exist at various scales (for example, they could encompass a grant-funded programme of work, the various components comprising a peer-reviewed publication, or a single experiment). This section is mandetory.
+
+Note: *Values in Excel Sheet are along 1-axis*
+
+| # | Field Label | Key | Datatype | Cardinality | Comment |
+| - | - | - | - | - | - |
+| 1 | Investigation unique ID |  @id | Unique Identifier | 1 | Identifier comprising the unique name of the institution/database hosting the submission of the investigation data, and the accession number of the investigation in that institution. |
+| 2 | Investigation title | ppeo:hasName | xsd:string | 1 | Human-readable string summarising the investigation. |
+| 3 | Investigation description | ppeo:hasDescription | xsd:string | 0-1 | Human-readable text describing the investigation in more detail. |
+| 4 | Submission Date | ppeo:hasSubmissionDate | xsd:datetime | 0-1 | Date of submission of the dataset presently being described to a host repository. |
+| 5 | Public Release Date | ppeo:hasPublicReleaseDate | xsd:datetime | 0-1 | Date of first public release of the dataset presently being described. |
+| 6 | License | ppeo:hasLicense | xsd:string/LICENSE? | 0-1 |  |
+| 7 | MIAPPE version | ppeo:hasMIAPPEVersion | xsd:string/Verion | 1 | The version of MIAPPE used. |
+| 8 | Associated publications | ppeo:hasAssociatedPublication | list[Object[Publication]] | 0+ | An identifier for a literature publication where the investigation is described. Use of DOIs is recommended. |
+
+Examples:
+
+| Field Label | old Example | new Example |
+| - | - | - |
+| Investigationunique ID | EBI:12345678 |  |
+| Investigation title | Adaptation of Maize to Temperate Climates: Mid-Density Genome-Wide Association Genetics and Diversity Patterns Reveal Key Genomic Regions, with a Major Contribution of the Vgt2 (ZCN8) Locus. | | 
+| Investigation Description | The migration of maize from tropical to temperate climates was accompanied by a dramatic evolution in flowering time. To gain insight into the genetic architecture of this adaptive trait, we conducted a 50K SNP-based genome-wide association and diversity investigation on a panel of tropical and temperate American and European representatives. |
+| Submission date | 2012-12-17 | 2024-10-01 |
+| Public release date | 2013-02-25 | 2024-11-07 |
+| License | CC BY-SA 4.0, Unreported | CC BY-SA 4.0 |
+| MIAPPE version | 1.1 | MIAFPE v1.2 |
+| Associated publication | doi:10.1371/journal.pone.0071377 | |
+
+Connections:
+
+    hasPart: [Investigation Metadata, list[Study{Studi Id}], list[publication{DOI}], Person]
+    
+    isPartOf: []
+
+Ontologies:
+
+    ppeo :
+    xsd : 
+
+Comment: Investigation Metadata could include  Vocabularies and Ontologies, Prefixes and References to Controlled Vocabularies and/or Ontologies
+
+
+#### Study
+A study (or experiment) comprises a series of assays (or measurements) of one or more types, undertaken to answer a particular biological question.
+Attributes within that class are highlighting the experimental design.
+This section is mandetory.
+
+| # | Field Label | Key | Datatype | Cardinality | Comment |
+| - | - | - | - | - | - |
+| 1 | Study unique ID |  @id | Unique Identifier | 1 | Unique identifier comprising the name or identifier for the institution/database hosting the submission of the study data, and the identifier of the study in that institution. If the study has no official unique ID, assign your own following the schema: study_1, study_2, study_..., study_n. |
+| 2 | Study title | ppeo:hasName | xsd:string | 1 | ... | 
+| 3 | Study description | ppeo:hasDescription | xsd:string | 0-1 | ...|
+| 4 | Start date of study | xsd:datetime | 1 | ... | 
+| 5 | End date of study | 
+| 6 | Contact Institution |
+| 7 | Geographic Location (country) |
+| 8 | Experimental site name | 
+| 9 | Geographic location (latitude) | 
+| 10 | Geographic location (longitude) | 
+| 11 | Geographic location (altitude) | 
+| 12 | Description of the experimental Design | 
+| 13 | Type of experiemental design | 
+| 14 | Observation Unit Level Hierarchy |
+| 15 | Observation Unit Description |
+| 16 | Description of growth facility |
+| 17 | Type of growth facility |
+| 18 | Cultural Practices |
+| 19 | Map of Experimental Design |
+
+
+Examples:
+
+| Field Label | old Example | new Example |
+| - | - | - | 
+| Study unique ID | 
+| Study title | 
+| Study description | 
+| Start date of study | 
+| End date of study |   
+| Contact Institution |
+| Geographic Location (country) |
+| Experimental site name | 
+| Geographic location (latitude) | 
+| Geographic location (longitude) | 
+| Geographic location (altitude) | 
+| Description of the experimental Design | 
+| Type of experiemental design | 
+| Observation Unit Level Hierarchy |
+| Observation Unit Description |
+| Description of growth facility |
+| Type of growth facility |
+| Cultural Practices |
+| Map of Experimental Design |
+
+
+Connections:
+
+    hasPart: []
+    
+    isPartOf: []
+
+Ontologies:
+
+    ppeo :
+
+
+#### Person
+A human involved in the investigation or specifically any of its studies. This section is mandetory 
+
+| # | Field Label | Key | Datatype | Cardinality | Comment |
+| - | - | - | - | - | - |
+| 1 | Study unique ID |  @id | Unique Identifier | 1 | ..|
+| 2 | Person Name |
+| 3 | Email | 
+| 4 | Person ID |
+| 5 | Role |
+| 6 | Affiliation |
+
+Examples:
+| Field Label |old Example | new Example |
+| - | - | - |
+| Study unique ID |  
+| Person Name |
+| Email | 
+| Person ID |
+| Role |
+| Affiliation |
+
+Connections:
+
+
+
+#### Data File
+#### Observation Unit
+#### Observed Variable
+#### Method
+#### Sensor
+#### Platform
+#### Sample
+#### Environment
+#### Experimental Factor
+#### Event
+#### Biological Material
 
 ## Reflection and Interoperability
 ### Interaction with ARC (Annotated Research Context)
@@ -198,86 +355,19 @@ The Semantic Sensor Network (SSN) ontology is an ontology for describing observa
 
 
 
-#### Update notes
-
-[MIAFPE.xlsx](MIAPPE\MIAFPE.xlsx) in the current version is a reducesd version of MIAPPE. It includes the following sheets:
-
-- Investigation 
-- Study
-- Observation Unit
-- Observed Variable
-- Data File
-- Sensor
-- Platform
-
-| <img src="..\references\imgs\MIAFPE_DataModelMAP_Version1.2.jpg"/> |
-| :--: |
-| MIAPPE extended with SNN/SOSA. Observed Variable is linked to Sensor in a new Sheet in the MIAPPE Excel Checklist. |
-
-![test](..\references\imgs\MIAFPE_DataModelMAP_Version1.2.jpg)
-## Future Implementation
-
-- Algorithms and Models
-- A tool to convert to JSON format with extended Information
 
 
-## MIAFPE Data Model
-
-### Investigation
-Investigations are research programmes with defined aims. They can exist at various scales (for example, they could encompass a grant-funded programme of work, the various components comprising a peer-reviewed publication, or a single experiment).
-
-Values in Excel Sheet are alon 1-axis
-
-| # | Field Label | Key | Datatype | Cardinality | Comment |
-| - | - | - | - | - | - |
-| 1 | Investigation unique ID |  @id | Unique Identifier | 1 | Identifier comprising the unique name of the institution/database hosting the submission of the investigation data, and the accession number of the investigation in that institution. |
-| 2 | Investigation title | ppeo:hasName | xsd:string | 1 | Human-readable string summarising the investigation. |
-| 3 | Investigation description | ppeo:hasDescription | xsd:string | 0-1 | Human-readable text describing the investigation in more detail. |
-| 4 | Submission Date | ppeo:hasSubmissionDate | xsd:datetime | 0-1 | Date of submission of the dataset presently being described to a host repository. |
-| 5 | Public Release Date | ppeo:hasPublicReleaseDate | xsd:datetime | 0-1 | Date of first public release of the dataset presently being described. |
-| 6 | License | ppeo:hasLicense | xsd:string/LICENSE? | 0-1 |  |
-| 7 | MIAPPE version | ppeo:hasMIAPPEVersion | xsd:string/Verion | 1 | The version of MIAPPE used. |
-| 8 | Associated publications | ppeo:hasAssociatedPublication | list[Object[Publication]] | 0+ | An identifier for a literature publication where the investigation is described. Use of DOIs is recommended. |
 
 
-    hasPart: [Investigation Metadata, list[Study{Studi Id}], list[publication{DOI}]]
-    
-    isPartOf: []
-
-Comment: Investigation Metadata could include to identify Vocabulary, Prefixes and References to Controlled Vocabularies and/or Ontologies
 
 
-### Study
-A study (or experiment) comprises a series of assays (or measurements) of one or more types, undertaken to answer a particular biological question.
-
-| # | Field Label | Key | Datatype | Cardinality | Comment |
-| - | - | - | - | - | - |
-| 1 | Study unique ID |  @id | Unique Identifier | 1 | ... |
-| 2 | Study title | ppeo:hasName | xsd:string | 1 | ... | 
-| 3 | Study description | ppeo:hasDescription | xsd:string | 0-1 | ...|
-| 4 | Start date of study | xsd:datetime | 1 | ... | 
-| 5 | End date of study | 
-| 6 | Contact Institution
-| 7 | Geographic Location (country) |
-| 8 | Experimental site name | 
-| 9 | Geographic location (latitude) | 
-| 10 | Geographic location (longitude) | 
-| 11 | Geographic location (altitude) | 
-|   | Experimental Design | 
-Observation Unit Level Hierarchy
-Observation Unit Description
-Growth Facility
-Cultural Practices
-Map of Experimental Design
 
 
-### Person
 
-- Person Name
-- Email
-- Person ID
-- Role
-- Affiliation
+
+
+
+
 
 
 
