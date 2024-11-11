@@ -5,12 +5,22 @@
 - [Introduction](#introduction)              
    - [Motivation](#motivation)
    - [Field Phenotyping Data](#field-phenotyping-data)
-- [Data Life Cyclie](#data-life-cycle)
-   - Planning
-   - Aquisition (MEasurement, Analysis)
-   - ...
+
+- [Data Life Cycle](#data-life-cycle)
+   - [Planning](#planning)
+   - [Collecting](#collecting)
+   - [Processing](#processing)
+   - [Analysing](#analysing)
+   - [Preserving](#preserving)
+   - [Sharing](#sharing)
+   - [Reusing](#reusing)
 
 - [Metadata](#metadata)
+   - [What is Metadata](#what-is-metadata)
+   - [Benefits of Metadata](#benefits-of-metadata)
+   - [Metadata Standards](#metadata-standards)
+
+- [Ontologies](#ontologies)
 
 - [FAIR Principes](#fair-priciples)
    - [Findability](#findability)
@@ -18,16 +28,114 @@
    - [Interoperability](#interoperability)
    - [Reusability](#reusability)
 
-- [Best PRactices](#best-practices)
+- [Best Practices](#best-practices)
+   - [Data Publishing Mindset](#data-publishing-mindset)
+   - [Structure](#structure)
+   - [Name Space](#name-space)
+   - [Raw Data](#raw-data)
+   - [Provenance](#provenande)
+   - [File Formats](#file-formats)
+   - [Provide Metadata](#provide-metadata)
+   - [Data Storage](#data-storage)
+   - [Data Quality](#data-quality)
+   - [License](#license)
 
+- [Hands On](#hands-on)
+   - COMING SOON
 
+- [References](#references)
 
 
 ## Introduction
 
 ### Motivation
 
-INSERT TREND OF PUBLISHING DATA WITHIN THE DOMAIN
+
+### Field Phenotyping Data
+
+
+---
+
+## Data Life Cycle
+
+### Planning
+
+
+### Collecting
+
+
+### Processing
+
+
+### Analysing
+
+
+### Preserving
+
+### Sharing
+### Reusing
+
+---
+
+## Metadata
+
+### What is Metadata
+
+### Benefits of Metadata
+
+### Metadata Standards
+
+---
+
+## Ontologies
+
+---
+
+
+## FAIR Principes
+
+### Findability
+
+### Accessibiltiy
+
+### Interoperability
+
+### Reusability
+
+---
+
+## Best Practices
+### Data Publishing Mindset
+### Structure
+### Name Space
+### Raw Data
+### Provenance
+### File Formats
+### Provide Metadata
+### Data Storage
+### Data Quality
+### License
+
+
+---
+
+## Hands On
+
+**COMING SOON**
+
+
+---
+
+## References
+
+
+
+---
+
+### Motivation
+In today’s rapidly advancing fields of plant phenotyping and scientific research, the challenge of properly managing data is paramount to enhance reproducibility, accessibility, and utility. Effective data management becomes crucial in addressing the “phenotyping bottleneck” that exists between genomics and breeding, which significantly impacts crop production and resilience under changing environmental conditions​(159766919). Despite advances in phenotyping technology, data complexity and inconsistent documentation still hinder data reuse and meta-analysis, as seen in plant phenotyping studies where varied experimental settings and heterogeneity complicate data integration​(s41597-023-02364-z).
+
+The FAIR principles (Findable, Accessible, Interoperable, and Reusable) are essential in fostering data integration and reuse, aiming to reduce the resource-intensive “data archaeology” currently required to reconstruct datasets without standardized metadata​(s41597-023-02364-z). Metadata standards, such as MIAPPE, enable researchers to document critical experimental details effectively, making data not only reusable but also more readily understandable across disciplines​(s41597-022-01815-3). As funding bodies and scientific communities increasingly mandate FAIR-compliant data, establishing robust metadata templates and workflows becomes central to ensuring that datasets retain value beyond their initial use and contribute to broader scientific and societal goals​(s41597-022-01815-3).
 
 ### Field Phenotyping Data
 
@@ -35,6 +143,11 @@ INSERT TREND OF PUBLISHING DATA WITHIN THE DOMAIN
 
 
 ## Data Life Cycle
+![Data Life Cycle](..\..\references\imgs\data-life-cycle.jpg)
+
+### Planning
+
+
 
 
 ## Metadata

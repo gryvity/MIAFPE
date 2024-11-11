@@ -68,7 +68,8 @@ For the purpose of clarification a few of the keywords as part of the Dataset In
 - Julie's (Different Methods compiled in one Dataset)
 - Kevin's (UAV Data CKA)
 - Oliver's (Breedface)
-- Bastian's (??)
+
+Eventually:
 - Jana K's (Purpose for Machine Learning Tasks)
 
 
