@@ -5,4 +5,5 @@ literature/pdf/
 TODOs.md
 datalab/*
 !datalab/datalabcontrol.ipynb
-tutorials/
+tutorials/MIAPPE/
+tutorials/ontologies/
