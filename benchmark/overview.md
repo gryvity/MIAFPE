@@ -64,10 +64,10 @@ For the purpose of clarification a few of the keywords as part of the Dataset In
 
 ## Dataset Overview
 
-- [HyPlant](#HyPlant): 
-- [Breedface]():
-- [Phenorob]():
-- [CKA UAV]():
+- [HyPlant](#hyplant): This dataset consists of HyPlant FLUO at-sensor radiance measurements from different campaigns in the years 2018 - 2023, FLOX measurements corresponding to several campaigns and matching SFMNN and SFM SIF products.
+- [Wheat](#wheat): The experimental data consist of the LIFT, PhenoCam, UAV, yield and environmental data.
+- [Phenorob](#phenorob): 
+- [CKA UAV](#cka-uav): A collection of RGB and Multispectral images and GCP captured with a Sony Alpha 7 (35 mm lens) and MicaSense Dual 10 channel multispectral camera mounted on DJI Matrice 600 Pro
 
 ## HyPlant
 
@@ -115,7 +115,7 @@ For the purpose of clarification a few of the keywords as part of the Dataset In
 
     This dataset consists of HyPlant FLUO at-sensor radiance measurements from different campaigns in the years 2018 - 2023, FLOX measurements corresponding to several campaigns and matching SFMNN and SFM SIF products.
 
-### Dataset Text
+### Dataset Text [EDIT]
 
 Total Files: 3748
 Total Size: 1817975698561 bytes (1.65 T)
@@ -162,7 +162,7 @@ Format Distribution: {'txt': 295, 'opt': 287, 'dat': 866, 'hdr': 1347, 'atm': 7,
 
 ### Paper
 
-    - hasRelatedPaper: Yes
+    - hasRelatedPaper: True
     - paperIdentifief: doi:10.22541/essoar.172411876.66031071/v1
     - paperURL: https://doi.org/10.22541/essoar.172411876.66031071/v1
 
@@ -200,10 +200,7 @@ Candidate has interdisciplinary character between agricultural science, environm
 | 2023_JIM_0600 | - |  |
 
 
-26062020 ESA Winter Wheat
-26062020 Mr Oat
-07072020 UR Winter Wheat
-26062020 Winter Wheat 
+
 
 **FLOX Systems:**
 FLOX systems are used to measure top-of-canopy reflectance and solar-induced fluorescence (SIF) using high-performance spectrometers
@@ -216,3 +213,284 @@ The Shoot group at IBG-2 currently operates 5 FLox systems, some of which are us
 Additionally, we are operating 2 ROX systems, which are smaller versions consisting of only one spectrometer. The ROX systems measure canopy reflectance but cannot be used to retrieve solar-induced fluorescence. The ROX systems are used as small weight field spectrometers to record canopy and leaf reflectance.
 
 FLOX and ROX can be combined with the leaf-clip FluoWAT, which is a custom made leaf clip to measure leaf-reflecance and transmittance as well as upwelling and down-welling solar induced fluorescence from single leaves in the field.
+
+
+Problematic for downloading! Needs simple Solution.
+
+Attached Files might help:
+
+- [Structure of the Dataset in a txt file](metadata\HyPlant\allpath.txt)
+- [Collection of Information about the Dataset with ARC labels in a csv](metadata\HyPlant\data_csv.csv)
+- [Dataset information in json format](metadata\HyPlant\datafiles.json)
+
+## Wheat
+
+### Responsibility
+
+    Oliver Knopf
+
+### People
+
+    Knopf, Oliver
+    Castro Rivera, Antony Oswaldo
+    Bendig, Juliane Viktoria
+    Warstat, Kevin
+    Pude, Ralf
+    Poorter, Hendrik
+    Rascher, Uwe
+    Muller, Onno
+
+
+### Time
+
+    Start: 2020-11-10 ; End: 2021-08-04
+
+### Location
+
+    Campus Klein-Altendorf, Rheinbach, Germany.
+
+
+
+### Data Location
+
+    https://doi.org/10.26165/JUELICH-DATA/QJIY7C
+    
+
+
+### Dataset Name
+
+    Experimental data: Field Phenotyping of Ten Wheat Cultivars under Elevated CO2 Shows Seasonal Differences in Chlorophyll Fluorescence, Plant Height and Vegetation Indice
+    
+
+### Description
+
+    The experimental data consist of the LIFT, PhenoCam, UAV, yield and environmental data.
+    
+
+### Dataset Text [EDIT]
+
+COMING SOON
+
+
+### Keywords
+
+    CO2, 
+    FACE (Free-Air CO2 Enrichment)
+    chlorophyll
+    climate change
+    fluorescence
+    phenotyping
+    senescence
+    wheat
+    
+
+### Subject
+
+    Agricultural Sciences
+
+
+### Dataset Size
+
+    3,246,290 bytes (compressed)
+      
+
+### Dataset Publication
+
+    isPublished: True
+    identifier: doi:10.26165/JUELICH-DATA/QJIY7C
+    url: https://doi.org/10.26165/JUELICH-DATA/QJIY7C
+    PublicationDate: 2023-12-11
+    DepositionDate: 2023-11-26
+    Accessibilty: Open
+
+### Version
+
+    1.0
+
+### License
+
+    CC0 - "Public Domain Dedication" 
+    
+
+### Paper
+
+    - hasRelatedPaper: True
+    - paperIdentifief: doi:10.3389/fpls.2023.1304751
+    - paperURL: https://pubmed.ncbi.nlm.nih.gov/38259917/
+
+Cite as: Knopf O, Castro A, Bendig J, Pude R, Kleist E, Poorter H, Rascher U, Muller O. Field phenotyping of ten wheat cultivars under elevated CO2 shows seasonal differences in chlorophyll fluorescence, plant height and vegetation indices. Front Plant Sci. 2024 Jan 8;14:1304751. doi: 10.3389/fpls.2023.1304751. PMID: 38259917; PMCID: PMC10800489.
+
+
+
+### Metadata Description
+
+NONE -> Needs to be synthetesised
+
+### Benchmark Candidate
+
+
+### Comments
+
+METADATA within some files. Need to contact responsible person for furthre data.
+
+
+
+## Phenorob
+
+NOT PUBLISHED!
+
+### Responsibility
+
+    Kraemer, Julie
+
+### People
+
+
+### Time
+
+    2021-2023
+
+### Location
+
+    CKA:  Campus-Klein Altendorf, DE
+
+### Data Location
+
+
+
+### Dataset Name
+
+    
+### Description
+
+    
+
+### Dataset Text
+
+
+
+### Keywords
+
+
+### Subject
+
+    Agricultural Sciences
+
+### Dataset Size
+
+        
+
+### Dataset Publication
+
+    isPublished: False
+    identifier: 
+    url: 
+    PublicationDate: 
+    DepositionDate: 
+    Accessibilty: 
+
+### Version
+
+    
+
+### License
+
+     
+
+
+### Paper
+
+    - hasRelatedPaper: 
+    - paperIdentifief: 
+    - paperURL: 
+
+Cite as: 
+
+### Metadata Description
+
+
+### Benchmark Candidate
+
+
+### Comments
+
+
+## CKA UAV
+
+
+NOT PUBLISHED!
+
+### Responsibility
+
+    Warstat, Kevin
+
+### People
+
+
+### Time
+
+    2021-2023
+
+### Location
+
+    CKA:  Campus-Klein Altendorf, DE
+
+### Data Location
+
+
+
+### Dataset Name
+
+    
+### Description
+
+    
+
+### Dataset Text
+
+
+
+### Keywords
+
+
+### Subject
+
+    Agricultural Sciences
+
+### Dataset Size
+
+        
+
+### Dataset Publication
+
+    isPublished: False
+    identifier: 
+    url: 
+    PublicationDate: 
+    DepositionDate: 
+    Accessibilty: 
+
+### Version
+
+    
+
+### License
+
+     
+
+
+### Paper
+
+    - hasRelatedPaper: 
+    - paperIdentifief: 
+    - paperURL: 
+
+Cite as: 
+
+### Metadata Description
+
+
+### Benchmark Candidate
+
+
+### Comments
