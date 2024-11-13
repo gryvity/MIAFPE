@@ -1,0 +1,34 @@
+{
+    "@context" : "context.json",
+
+
+    "@id" : "miappe:{}",
+    "@type" : "ppeo:study",
+
+    "ppeo:isPartOf": {
+        "@type": "xsd:string",
+        "rdfs:label": "Investigation unique ID reference",
+        "@value": "miappe:investigation"
+    },
+
+    "ppeo:hasIdentifier" : {
+        "@type" : ["xsd:string", "xsd:anyURI"],
+        "rdfs:label" : "Study unique ID*",
+        "@value" : ""
+    },
+
+    "ppeo:hasName" : {
+        "@type" : "xsd:string",
+        "rdfs:label" : "Study title*",
+        "@value" : ""
+    },
+
+    "ppeo:hasDescription" : {
+        "@type" : "xsd:string",
+        "rdfs:label" : "Study description",
+        "@value" : ""
+    }
+
+
+
+}

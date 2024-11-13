@@ -60,9 +60,7 @@ Planned Steps:
   - [MIAPPE](#miappe)
 
   - [Motivation for a New Standard](#motivation-for-a-new-standard)
-    - [Limitations of MIAPPE for Modern Field Phenotyping](#limitations-of-miappe-for-modern-field-phenotyping)
-    - [Advances in Remote Sensing, Sensor Technology, and Machine Learning](#advances-in-remote-sensing-sensor-technology-and-machine-learning)
-    - [Necessity of Expanded Metadata for Comprehensive Documentation](#necessity-of-expanded-metadata-for-comprehensive-documentation)
+
   - [Outlook of the Work](#outlook-of-the-work)
     - [Overview of Upcoming Sections](#overview-of-upcoming-sections)
     - [Key Challenges Addressed in the Work](#key-challenges-addressed-in-the-work)
@@ -97,24 +95,14 @@ Planned Steps:
 
 - [Reflection and Interoperability](#reflection-and-interoperability)
   - [Interaction with ARC (Annotated Research Context)](#interaction-with-arc-annotated-research-context)
-    - [Introduction to ARC and FAIRagro Consortium](#introduction-to-arc-and-fairagro-consortium)
-    - [Potential for Integration with MIAFPE](#potential-for-integration-with-miafpe)
-    - [Future Directions and Interoperability Prospects](#future-directions-and-interoperability-prospects)
+  - [Future Directions and Interoperability Prospects](#future-directions-and-interoperability-prospects)
 
 - [References](#references)
 
 
 
 ## Introduction
-### MIAPPE
-
-
-- https://doi.org/10.1111/nph.16544
-- https://doi.org/10.1038/s41597-023-02364-z
-- https://www.miappe.org/
-- https://doi.org/10.1093/jxb/ery006
-- https://doi.org/10.1186/s13007-016-0144-4
-- https://doi.org/10.1016/j.tplants.2013.04.008 
+### MIAPPE [EDIT]
 
 
 
@@ -124,7 +112,7 @@ Plant traits are influenced not only by the plant’s genetics but also by compl
 
 MIAPPE (Minimum Information About Plant Phenotyping Experiments) was developed to address these gaps, inspired by the "Minimum Information" approach used successfully in other biological fields, such as MIAME for microarray experiments and MIAPE for proteomics. This approach defines a checklist of essential attributes that need to be recorded to facilitate data deposition, storage, and reuse, without mandating that all attributes be filled in every case. Instead, the checklist serves as a guide, ensuring that crucial information is not omitted, thereby supporting interoperability and data discovery. As Krajewski et al. outlined, this “minimum information” framework is supported by a number of bioscience standards registered on platforms like Biosharing (now FAIRsharing), which provide centralized access to metadata standards, including MIAPPE.
 
-In 2016, the initial version of MIAPPE was released, consolidating best practices for the documentation and organization of plant phenotyping data within a comprehensive metadata framework. MIAPPE v1 introduced a structured list of metadata fields spanning key aspects of phenotyping experiments: investigation, study, biological material, observation unit, observed variables, and data files. Additionally, this version provided compatibility with the ISA-Tab format, facilitating integration with other datasets in the life sciences. The ISA-Tab Phenotyping Configuration, designed specifically for MIAPPE, enables researchers to organize and structure metadata for plant phenotyping experiments in a flexible and adaptable format. Ćwiek-Kupczyńska et al. (2016) demonstrated the practical implementation of MIAPPE in multiple systems, highlighting how ISA-Tab-formatted data structures could standardize metadata collection and enhance data interoperability across platforms (https://doi.org/10.1186/s13007-016-0144-4).
+In 2016, the initial version of MIAPPE was released, consolidating best practices for the documentation and organization of plant phenotyping data within a comprehensive metadata framework. MIAPPE v1 introduced a structured list of metadata fields spanning key aspects of phenotyping experiments: investigation, study, biological material, observation unit, observed variables, and data files. Additionally, this version provided compatibility with the ISA-Tab format, facilitating integration with other datasets in the life sciences. The ISA-Tab Phenotyping Configuration, designed specifically for MIAPPE, enables researchers to organize and structure metadata for plant phenotyping experiments in a flexible and adaptable format. Ćwiek-Kupczyńska et al. (2016) demonstrated the practical implementation of MIAPPE in multiple systems, highlighting how ISA-Tab-formatted data structures could standardize metadata collection and enhance data interoperability across platforms ([SOURCE](https://doi.org/10.1186/s13007-016-0144-4)).
 
 With increasing recognition of the importance of the FAIR (Findable, Accessible, Interoperable, Reusable) data principles, MIAPPE was further refined in its 2020 update to version 1.1 (Papoutsoglou et al., 2020). This update incorporated controlled vocabularies and ontologies to improve data consistency, with extended fields and refined descriptors to better support a range of phenotyping studies. Version 1.1 of MIAPPE not only addresses previous limitations in documenting metadata but also enhances compatibility with platforms such as the Breeding API (BrAPI), ISA-Tools, and other widely adopted data infrastructures in the plant sciences. The updated standard facilitates precise annotation of traits, conditions, and experimental setups, enabling datasets to be more seamlessly integrated into phenomics research pipelines. Today, MIAPPE is utilized across a broad spectrum of research projects and is actively embedded in several plant science databases and analysis tools, promoting the accessibility and reusability of phenotypic data.
 
@@ -139,9 +127,9 @@ While MIAPPE offers a solid foundation for documenting plant phenotyping experim
 
 To address this need, the new MIAFPE (Minimum Information about Field Phenotyping Experiments) Metadata Checklist aims to extend the MIAPPE Metadata standard. MIAFPE will incorporate remote sensing and computer science advancements, creating a metadata framework tailored for field phenotyping applications. Additionally, while machine learning models are not yet integrated, their inclusion is planned for future updates, allowing MIAFPE to comprehensively document the increasingly complex workflows of automated phenotyping.
 
-### Outlook of the Work
-#### Overview of Upcoming Sections
-#### Key Challenges Addressed in the Work
+### Outlook of the Work [REWORK]
+
+The Next Sections are dedicated to the classes, attributes and their connection within the 
 
 ## Integrating SSN/SOSA to MIAPPE
 ### SSN/SOSA
@@ -184,7 +172,7 @@ Examples:
 
 | Field Label | old Example | new Example |
 | - | - | - |
-| Investigationunique ID | EBI:12345678 |  |
+| Investigation unique ID | EBI:12345678 | doi:10.26165/JUELICH-DATA/QKJKPW |
 | Investigation title | Adaptation of Maize to Temperate Climates: Mid-Density Genome-Wide Association Genetics and Diversity Patterns Reveal Key Genomic Regions, with a Major Contribution of the Vgt2 (ZCN8) Locus. | | 
 | Investigation Description | The migration of maize from tropical to temperate climates was accompanied by a dramatic evolution in flowering time. To gain insight into the genetic architecture of this adaptive trait, we conducted a 50K SNP-based genome-wide association and diversity investigation on a panel of tropical and temperate American and European representatives. |
 | Submission date | 2012-12-17 | 2024-10-01 |
@@ -204,13 +192,20 @@ Ontologies:
     ppeo :
     xsd : 
 
-Comment: Investigation Metadata could include  Vocabularies and Ontologies, Prefixes and References to Controlled Vocabularies and/or Ontologies
+
+Changes:
+
+    - some new examples
+
+Comment: Investigation Metadata could include  Vocabularies and Ontologies, Prefixes and References to Controlled Vocabularies and/or Ontologies. MAYBE via an attached external file, e.g. like [context.json](JSON_LD\context.json).
 
 
 #### Study
 A study (or experiment) comprises a series of assays (or measurements) of one or more types, undertaken to answer a particular biological question.
 Attributes within that class are highlighting the experimental design.
 This section is mandetory.
+
+
 
 | # | Field Label | Key | Datatype | Cardinality | Comment |
 | - | - | - | - | - | - |
@@ -270,6 +265,10 @@ Ontologies:
 
     ppeo :
 
+Changes from v1.1
+
+    - New Examples
+
 
 #### Person
 A human involved in the investigation or specifically any of its studies. This section is mandetory 
@@ -295,37 +294,205 @@ Examples:
 
 Connections:
 
+Ontologies:
+
 
 
 #### Data File
+
+A human involved in the investigation or specifically any of its studies. This section is mandetory 
+
+| # | Field Label | Key | Datatype | Cardinality | Comment |
+| - | - | - | - | - | - |
+| 1 | Study unique ID |  @id | Unique Identifier | 1 | ..|
+| 2 | Person Name |
+| 3 | Email | 
+| 4 | Person ID |
+| 5 | Role |
+| 6 | Affiliation |
+
+Examples:
+| Field Label |old Example | new Example |
+| - | - | - |
+| Study unique ID |  
+| Person Name |
+| Email | 
+| Person ID |
+| Role |
+| Affiliation |
+
+Connections:
+
+Ontologies:
+
+
+
 #### Observation Unit
+
+A human involved in the investigation or specifically any of its studies. This section is mandetory 
+
+| # | Field Label | Key | Datatype | Cardinality | Comment |
+| - | - | - | - | - | - |
+| 1 | Study unique ID |  @id | Unique Identifier | 1 | ..|
+| 2 | Person Name |
+| 3 | Email | 
+| 4 | Person ID |
+| 5 | Role |
+| 6 | Affiliation |
+
+Examples:
+| Field Label |old Example | new Example |
+| - | - | - |
+| Study unique ID |  
+| Person Name |
+| Email | 
+| Person ID |
+| Role |
+| Affiliation |
+
+Connections:
+
+Ontologies:
+
+
+
 #### Observed Variable
+
+A human involved in the investigation or specifically any of its studies. This section is mandetory 
+
+| # | Field Label | Key | Datatype | Cardinality | Comment |
+| - | - | - | - | - | - |
+| 1 | Study unique ID |  @id | Unique Identifier | 1 | ..|
+| 2 | Person Name |
+| 3 | Email | 
+| 4 | Person ID |
+| 5 | Role |
+| 6 | Affiliation |
+
+Examples:
+| Field Label |old Example | new Example |
+| - | - | - |
+| Study unique ID |  
+| Person Name |
+| Email | 
+| Person ID |
+| Role |
+| Affiliation |
+
+Connections:
+
+Ontologies:
+
+
 #### Method
+
+NOT IMPLEMENTED YET
+
+
 #### Sensor
+
+A human involved in the investigation or specifically any of its studies. This section is mandetory 
+
+| # | Field Label | Key | Datatype | Cardinality | Comment |
+| - | - | - | - | - | - |
+| 1 | Study unique ID |  @id | Unique Identifier | 1 | ..|
+| 2 | Person Name |
+| 3 | Email | 
+| 4 | Person ID |
+| 5 | Role |
+| 6 | Affiliation |
+
+Examples:
+| Field Label |old Example | new Example |
+| - | - | - |
+| Study unique ID |  
+| Person Name |
+| Email | 
+| Person ID |
+| Role |
+| Affiliation |
+
+Connections:
+
+Ontologies:
+
+
 #### Platform
+
+A human involved in the investigation or specifically any of its studies. This section is mandetory 
+
+| # | Field Label | Key | Datatype | Cardinality | Comment |
+| - | - | - | - | - | - |
+| 1 | Study unique ID |  @id | Unique Identifier | 1 | ..|
+| 2 | Person Name |
+| 3 | Email | 
+| 4 | Person ID |
+| 5 | Role |
+| 6 | Affiliation |
+
+Examples:
+| Field Label |old Example | new Example |
+| - | - | - |
+| Study unique ID |  
+| Person Name |
+| Email | 
+| Person ID |
+| Role |
+| Affiliation |
+
+Connections:
+
+Ontologies:
+
+
 #### Sample
+
+NOT IMPLEMENTED YET
+
 #### Environment
+
+NOT IMPLEMENTED YET
+
 #### Experimental Factor
+
+NOT IMPLEMENTED YET
+
 #### Event
+
+NOT IMPLEMENTED YET
+
 #### Biological Material
 
+NOT IMPLEMENTED YET
+
 ## Reflection and Interoperability
+
 ### Interaction with ARC (Annotated Research Context)
 
 https://nfdi4plants.org/nfdi4plants.knowledgebase/docs/implementation/AnnotatedResearchContext.html
 
+NOT IMPLEMENTED YET
 
-#### Introduction to ARC and FAIRagro Consortium
-#### Potential for Integration with MIAFPE
-#### Future Directions and Interoperability Prospects
+
+
+### Future Directions and Interoperability Prospects
+
 
 ## References
 
-- Minimum Information About Plant Phenotyping Experiments, Website last visited 2024-11-06, https://www.miappe.org/
+<a id="1">[1]</a> 
+Minimum Information About Plant Phenotyping Experiments, Website last visited 2024-11-06, https://www.miappe.org/
 
 
+[EDIT]
+- https://doi.org/10.1111/nph.16544
+- https://doi.org/10.1038/s41597-023-02364-z
+- https://www.miappe.org/
+- https://doi.org/10.1093/jxb/ery006
+- https://doi.org/10.1186/s13007-016-0144-4
+- https://doi.org/10.1016/j.tplants.2013.04.008 
 
-# 
+
 ## Introduction
 
 Early MIAPPE - recommendations to address three different aspects of standardization. 
@@ -340,19 +507,27 @@ While MIAPPE provides a good framework for documenting plant phenotyping experim
 
 The new Metadata Checklist MIAFPE (Minimum Information about Field Phenotyping Experiments) is going to extend the [MIAPPE](https://github.com/MIAPPE) Metadata standard with additional information from the Domain of Remote Sensing and Computer Science in order to be well suited for Field Phenotyping Experiments. The MIAPPE Checklist format will 
 
-## Integrating SSN/SOSA
+## Integrating SSN/SOSA [EDIT]
 
-### SSN Semantic Sensor Network
 
-The Semantic Sensor Network (SSN) ontology is an ontology for describing observations, in terms of the procedures executed and sensors used, the properties observed, which relate to the features (entities) of interest.
+The Semantic Sensor Network (SSN) ontology is an ontology for describing observations, in terms of the procedures executed and sensors used, the properties observed, which relate to the features (entities) of interest. 
 
 [Open Geospatial Consortium (OGC)](https://www.ogc.org/)
+
+As a co
+
 
 
 | <img src="..\references\imgs\miappe_extension_v1.png"/> |
 | :--: |
-| MIAPPE extended with SNN/SOSA. Observed Variable is linked to Sensor in a new Sheet in the MIAPPE Excel Checklist. |
+| Plan:  |
 
+
+The Problem with the MIAPPE terminology and SOSA:
+
+- Certain classes are not one-to-one mapping on SOSA classes.
+- MIAPPE links Instances via Study ID
+- Observation Unit
 
 
 

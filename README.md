@@ -60,8 +60,6 @@ Furthermore I will seize the opportunity to increase the visibility of Data. Wit
 - Is the given Format of use for the differen [FAIRagro](https://fairagro.net/ueber-uns/unsere-task-areas/) Task Areas
 - How to increase findability of data sets in field
 
-## How To...?
-
 
 
 
@@ -86,22 +84,26 @@ Here I hope to create a Catalogue of selected short tutorials, which could be ut
 - providing workflows or strategies for polishing a good quality data publication
 
 
-The Material carefully crafted for the Field Phenotyping Group
+The Material carefully crafted for the Field Phenotyping Group. Available Tutorials:
 
-- **Data Management:** Lorem Ipsum...
-- **MIAPPE:** Lorem Ipsum..
-- **FAIR Principles:** ....
+- [**Best Practices:**](tutorials\datamanagement\bestpractices.md) An Overview of Data and Metadata and their management on a basic level; material which is thought to be used as an introduction to data management.
 
-Links to Material of other NFDI-Groups
+More Tutorials to come:
 
+- MIAPPE for Field Phenotyping: An introduction of a Metadata Standard extended for the purpose of bridging phenotypng and remote sensing within one template.
+
+- Ontologies and Metadata Annotation: A guide helping the Annotation of Metadata.
+
+- FAIR Data: A General Introduction of the FAIR principles
 
 
 ### Benchmark
 
-Lorem Ipsum...
-
+The purpose of the Benchmark Dataset is to have a collection of different Datasets, which help identify the coverage of data within the domain of field phenotyping regarding different aspects. ;;;;
 
 ### Minimum Information about Field Phenotyping Experiments
+
+A Metadata Template building on the established Metadata Standard MIAPPE (Minimum Information about Plant Phenotyping Experiments), extending the checklist template of MIAPPE with SOSA compliant classes and reorganizing the attributes in order to build a basic bridge between remote sensing and phenotyping.
 
 [MIAFPE](MIAFPE\README.md)
 
@@ -112,5 +114,7 @@ Lorem Ipsum...
 
 ## Enhancing Findability
 
-## Literature
+COMING SOON
+
+
 
