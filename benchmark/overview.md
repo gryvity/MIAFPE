@@ -200,6 +200,107 @@ Candidate has interdisciplinary character between agricultural science, environm
 | 2023_JIM_0600 | - |  |
 
 
+## ARC-Structure
+
+|- Studies
+    |- Meta
+> Might contain Metadata for all the studies
+    |- 2018_SEL
+    |- 2019_WST
+    |- 2019_NRS
+    |- 2019_SEL
+    |- 2019_TR32
+    |- 2020_CKA
+    |- 2021_CKA
+    |- 2021_HOE
+    |- 2021_GLO
+    |- 2022_HOE
+    |- 2022_CKA
+    |- 2022_INN
+    |- 2022_SEL
+    |- 2023_JIM
+> Holds data about the experiment design. For now it is empty
+|- Assays
+    |- Meta
+> Might contain Metadata for all the Assays
+    |- FLUO
+        |- 2018_SEL_600
+        |- 2019_WST_1500
+        |- 2019_NRS_1500
+        |- 2019_SEL_0600
+        |- 2019_TR32_1800
+        |- 2020_CKA_0350
+        |- 2020_CKA_0600
+        |- 2021_CKA_0350
+        |- 2021_HOE_0600
+        |- 2021_GLO_1150
+        |- 2022_HOE_0600
+        |- 2022_CKA_0350
+        |- 2022_INN_0600
+        |- 2022_SEL_0600
+        |- 2023_JIM_0600
+> here all the data found in https://datapub.fz-juelich.de/plantsciences/HyData-HyPlant-FLUO/01_data/01_radiance/ is sorted into the respective folders
+    |- FLOX
+        |- 2018_SEL
+        |- 2019_WST
+        |- 2019_NRS
+        |- 2020_CKA
+        |- 2021_CKA
+        |- 2021_GLO
+        |- 2022_CKA
+> here all the data found in https://datapub.fz-juelich.de/plantsciences/HyData-HyPlant-FLUO/01_data/02_FLOX/ is sorted into the respective folders
+    |- DEM
+        |- 2018_SEL_600
+        |- 2019_WST_1500
+        |- 2019_NRS_1500
+        |- 2019_SEL_0600
+        |- 2019_TR32_1800
+        |- 2020_CKA_0350
+        |- 2020_CKA_0600
+        |- 2021_CKA_0350
+        |- 2021_HOE_0600
+        |- 2021_GLO_1150
+        |- 2022_HOE_0600
+        |- 2022_CKA_0350
+        |- 2022_INN_0600
+        |- 2022_SEL_0600
+        |- 2023_JIM_0600
+> here all the data found in https://datapub.fz-juelich.de/plantsciences/HyData-HyPlant-FLUO/01_data/03_DEMs/ is sorted
+|- Runs
+    |- SFM
+        |- 2018_SEL_600
+        |- 2019_WST_1500
+        |- 2019_NRS_1500
+        |- 2019_SEL_0600
+        |- 2019_TR32_1800
+        |- 2020_CKA_0350
+        |- 2020_CKA_0600
+        |- 2021_CKA_0350
+        |- 2021_HOE_0600
+        |- 2021_GLO_1150
+        |- 2022_HOE_0600
+        |- 2022_CKA_0350
+        |- 2022_INN_0600
+        |- 2022_SEL_0600
+        |- 2023_JIM_0600
+    |- SFMNN
+        |- 2018_SEL_600
+        |- 2019_WST_1500
+        |- 2019_NRS_1500
+        |- 2019_SEL_0600
+        |- 2019_TR32_1800
+        |- 2020_CKA_0350
+        |- 2020_CKA_0600
+        |- 2021_CKA_0350
+        |- 2021_HOE_0600
+        |- 2021_GLO_1150
+        |- 2022_HOE_0600
+        |- 2022_CKA_0350
+        |- 2022_INN_0600
+        |- 2022_SEL_0600
+        |- 2023_JIM_0600
+> here all data from the products are sorted into the folders        
+
 
 
 **FLOX Systems:**

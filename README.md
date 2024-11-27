@@ -99,7 +99,7 @@ More Tutorials to come:
 
 ### Benchmark
 
-The purpose of the Benchmark Dataset is to have a collection of different Datasets, which help identify the coverage of data within the domain of field phenotyping regarding different aspects. ;;;;
+The purpose of the Benchmark Dataset is to have a collection of different Datasets, which help identify the coverage of data within the domain of field phenotyping regarding different aspects.
 
 ### Minimum Information about Field Phenotyping Experiments
 
@@ -108,6 +108,8 @@ A Metadata Template building on the established Metadata Standard MIAPPE (Minimu
 [MIAFPE](MIAFPE\README.md)
 
 #### MIAPPE and SSN/SOSA
+
+
 
 #### Linked Data
 
