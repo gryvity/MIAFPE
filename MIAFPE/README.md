@@ -189,7 +189,7 @@ Connections:
 
 Ontologies:
 
-    ppeo :
+    ppeo : 
     xsd : 
 
 

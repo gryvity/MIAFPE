@@ -1,0 +1,2 @@
+https://datapub.fz-juelich.de/plantsciences/HyData-HyPlant-FLUO/01_data/02_FLOX/22-%20FlexSense-%20June%202019/01_data/ALL_INDEX_FLOX_JB-0103-ESA.csv
+https://datapub.fz-juelich.de/plantsciences/HyData-HyPlant-FLUO/01_data/02_FLOX/22-%20FlexSense-%20June%202019/02_locs/wst_drought_polygon.shp

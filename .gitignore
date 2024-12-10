@@ -7,3 +7,4 @@ datalab/*
 !datalab/datalabcontrol.ipynb
 tutorials/MIAPPE/
 tutorials/ontologies/
+benchmark/article.tex

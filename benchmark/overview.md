@@ -301,6 +301,44 @@ Candidate has interdisciplinary character between agricultural science, environm
         |- 2023_JIM_0600
 > here all data from the products are sorted into the folders        
 
+## Sensors and Platforms
+
+HyPlant imaging spectrometer consists of two sensor-modules:
+
+- The DUAL module records hyperspectral data in the spectral range from 400-2500nm, which is useful in deriving biochemical and structural plant properties.
+
+- The FLUO module acquires data in the red and near-infrared bands in the spectral range of 670-780nm with a distinctly higher spectral resolution and sampling interval. 
+
+Hyperspectral imaging has the benefit of cost-efficient and non-destructive assessment of structural (e.g. leaf area index, biomass) or biochemical (e.g. pigment or water content) vegetation properties. [
+
+    2. Jacquemoud, S.; Baret, F.; Andrieu, B.; Danson, F.; Jaggard, K. Extraction of vegetation biophysical parameters
+by inversion of the PROSPECT + SAIL models on sugar beet canopy reflectance data. Application to TM
+and AVIRIS sensor. Remote Sens. Environ. 1995, 52, 163–172. [CrossRef]
+3. Vohland, M.; Jarmer, T. Estimating structural and biochemical parameters for grassland from
+spectroradiometer data by radiative transfer modelling (PROSPECT+SAIL). Int. J. Remote Sens. 2008,
+29, 191–209. [CrossRef]
+4. Schlerf, M.; Atzberger, C. Inversion of a forest reflectance model to estimate structural canopy variables from
+hyperspectral remote sensing data. Remote Sens. Environ. 2006, 100, 281–294. [CrossRef]
+5. Siegmann, B.; Jarmer, T.; Beyer, F.; Ehlers, M. The potential of pansharpened EnMAP data for the assessment
+of wheat LAI. Remote Sens. 2015, 7, 12737–12762. [CrossRef]
+
+]
+
+
+
+[
+8. Alonso, L.; Gómez-Chova, L.; Vila-Francés, J.; Amorós-López, J.; Guanter, L.; Calpe, J.; Moreno, J. Sensitivity
+analysis of the Fraunhofer Line Discrimination method for themeasurement of chlorophyll fluorescence
+using a field spectroradiometer. In Proceedings of the 3rd International Workshop on Remote Sensing of
+Vegetation Fluorescence, Florence, Italy, 7–9 February 2007.
+9. Julitta, T.; Burkart, A.; Colombo, R.; Rossini, M.; Schickling, A.; Migliavacca, M.; Cogliati, S.; Wutzler, T.;
+Rascher, U. Accurate measurements of fluorescence in the O2A and O2B band using the FloX spectroscopy
+system—Results and prospect. In Proceedings of the Potsdam GHG Flux Workshop: From Photosystems to
+Ecosystems, Potsdam, Germany, 24–26 October 2017.
+
+]
+
+
 
 
 **FLOX Systems:**
