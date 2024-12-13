@@ -1,6 +1,0 @@
-https://datapub.fz-juelich.de/plantsciences/HyData-HyPlant-FLUO/01_data/03_DEMs/25-%20Germany-%20June%202021/HyPlant/20210615/FLUO/20210615-HOE-1144-0600-L6-S-FLUO_radiance_dem_sensor.dat
-https://datapub.fz-juelich.de/plantsciences/HyData-HyPlant-FLUO/01_data/03_DEMs/25-%20Germany-%20June%202021/HyPlant/20210615/FLUO/20210615-HOE-1148-0600-L5-N-FLUO_radiance_dem_sensor.dat
-https://datapub.fz-juelich.de/plantsciences/HyData-HyPlant-FLUO/01_data/03_DEMs/25-%20Germany-%20June%202021/HyPlant/20210615/FLUO/20210615-HOE-1151-0600-L4-S-FLUO_radiance_dem_sensor.dat
-https://datapub.fz-juelich.de/plantsciences/HyData-HyPlant-FLUO/01_data/03_DEMs/25-%20Germany-%20June%202021/HyPlant/20210615/FLUO/20210615-HOE-1155-0600-L3-N-FLUO_radiance_dem_sensor.dat
-https://datapub.fz-juelich.de/plantsciences/HyData-HyPlant-FLUO/01_data/03_DEMs/25-%20Germany-%20June%202021/HyPlant/20210615/FLUO/20210615-HOE-1159-0600-L2-S-FLUO_radiance_dem_sensor.dat
-https://datapub.fz-juelich.de/plantsciences/HyData-HyPlant-FLUO/01_data/03_DEMs/25-%20Germany-%20June%202021/HyPlant/20210615/FLUO/20210615-HOE-1203-0600-L1-N-FLUO_radiance_dem_sensor.dat
