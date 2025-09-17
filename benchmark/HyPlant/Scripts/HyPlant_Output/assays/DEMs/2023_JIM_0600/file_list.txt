@@ -1,2 +1,0 @@
-https://datapub.fz-juelich.de/plantsciences/HyData-HyPlant-FLUO/01_data/03_DEMs/29-%20Germany%20June%202023/HyPlant/20230613/FLUO/20230613-JIM-1444-0600-L1-N-FLUO_radiance_dem_sensor.dat
-https://datapub.fz-juelich.de/plantsciences/HyData-HyPlant-FLUO/01_data/03_DEMs/30-%20Germany%20August%202023/HyPlant/20230823/FLUO/20230823-JIM-1212-0600-L1-N-FLUO_radiance_dem_sensor.dat

@@ -1,3 +1,0 @@
-https://datapub.fz-juelich.de/plantsciences/HyData-HyPlant-FLUO/01_data/README_DEMs.txt
-https://datapub.fz-juelich.de/plantsciences/HyData-HyPlant-FLUO/01_data/README_FLOX.txt
-https://datapub.fz-juelich.de/plantsciences/HyData-HyPlant-FLUO/01_data/README_radiance.txt
