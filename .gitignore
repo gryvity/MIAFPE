@@ -1,10 +1,11 @@
 MIAPPE_extension/miappe_to_json/script/mapMIAPPEnotebook.ipynb
 MIAPPE_extension/MIAPPEv1.1.xlsx
 drafts/
-references/pdf/
+references/referenceslist.md
 TODOs.md
 datalab/*
 !datalab/datalabcontrol.ipynb
 tutorials/MIAPPE/
 tutorials/ontologies/
 benchmark/article.tex
+datalab/
