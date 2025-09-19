@@ -3,9 +3,7 @@ MIAPPE_extension/MIAPPEv1.1.xlsx
 drafts/
 references/referenceslist.md
 TODOs.md
-datalab/*
-!datalab/datalabcontrol.ipynb
 tutorials/MIAPPE/
 tutorials/ontologies/
 benchmark/article.tex
-datalab/
+temp/
