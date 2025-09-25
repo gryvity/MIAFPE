@@ -1,4 +1,0 @@
-- Wilkinson, M., Dumontier, M., Aalbersberg, I. et al. (2016) The FAIR Guiding Principles for scientific data management and stewardship. Sci Data 3, 160018. https://doi.org/10.1038/sdata.2016.18
-- Hasegawa, T., Wakatsuki, H., Ju, H. et al. (2022) A global dataset for the projected impacts of climate change on four major crops. Sci Data 9, 58. https://doi.org/10.1038/s41597-022-01150-7
-- Davis, K. F., Downs, S. & Gephart, J. A. (2021) Towards food supply chain resilience to environmental shocks. Nature Food 2, 54–65. https://doi.org/10.1038/s43016-020-00196-3
-- Watt, M., Fiorani, F., Usadel, B., Rascher, U., Muller, O., & Schurr, U. (2020). Phenotyping: New Windows into the Plant for Breeders. Annual review of plant biology, 71, 689–712. https://doi.org/10.1146/annurev-arplant-042916-041124

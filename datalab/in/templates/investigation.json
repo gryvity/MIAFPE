@@ -1,0 +1,60 @@
+{
+    "@context" : "context.json",
+
+    "@id" : "miappe:investigation",
+    "@type" : "ppeo:investigation",
+    "rdfs:label" : "Investigation",
+
+    
+    "ppeo:hasIdentifier" : {
+        "@type" : ["xsd:string", "xsd:anyURI"],
+        "rdfs:label" : "Investigation unique ID",
+        "@value" : ""
+    },
+
+    "ppeo:hasName" : {
+        "@type" : "xsd:string",
+        "rdfs:label" : "Investigation title*",
+        "@value" : ""
+    },
+
+    "ppeo:hasDescription" : {
+        "@type" : "xsd:string",
+        "rdfs:label" : "Investigation description",
+        "@value" : ""
+    },
+
+    "ppeo:hasMIAPPEVersion" : {
+        "@type" : "xsd:string",
+        "rdfs:label" : "MIAPPE version*",
+        "rdfs:comment" : "",
+        "@value" : ""
+    },
+
+    
+    "pppeo:hasSubmissionDate": {
+        "@type " : "owl:FunctionalProperty",
+        "rdfs:label" : "Submission Date",
+        "@value" : ""
+    },
+
+    "ppeo:hasPublicReleaseDate" : {
+        "@type " : "owl:FunctionalProperty",
+        "rdfs:label" : "Public Release Date",
+        "@value" : ""
+    },
+
+    "ppeo:hasLicense" : {
+        "@type" : "owl:FunctionalProperty",
+        "rdfs:label" : "License",
+        "rdfs:comment" : "",
+        "@value" : ""
+    },
+
+    "ppeo:hasAssociatedPublication" : {
+        "@type" : ["xsd:string", "xsd:anyURI"],
+        "rdfs:label" : "Associated publication",
+        "@value" : ""
+    }
+
+}

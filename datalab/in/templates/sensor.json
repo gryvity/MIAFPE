@@ -1,0 +1,51 @@
+{
+    "@id" : "",
+    "@type" : "sosa:Sensor",
+    "rdfs:label" : "Sensor",
+
+
+    "ppeo:hasName" : {
+        "@type" : "xsd:string",
+        "rdfs:label" : "Sensor name*",
+        "@value" : ""
+    },
+
+    "ppeo:hasDescription" : {
+        "@type" : "xsd:string",
+        "rdfs:label" : "Sensor description",
+        "@value" : ""
+    },
+
+    "hasManufacturer" : {
+        "@type" : "xsd:string",
+        "rdfs:label" : "Manufacturer",
+        "@value" : ""
+    },
+
+    "hasModel" : {
+        "@type" : "xsd:string",
+        "rdfs:label" : "Model",
+        "@value" : ""
+    },
+
+    "hasAssociatedFile" : {
+        "@type" : ["xsd:string", "xsd:anyURI"],
+        "rdfs:label" : "Associated file",
+        "@value" : ""
+    },
+
+    "hasSensorType" : {
+        "@type" : "xsd:string",
+        "rdfs:label" : "Sensor type",
+        "@value" : ""
+    },
+
+    "hasSensorAccessionNumber" : {
+        "@type" : "xsd:string",
+        "rdfs:label" : "Sensor accession number",
+        "@value" : ""
+    },
+
+
+
+}
