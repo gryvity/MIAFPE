@@ -12,7 +12,7 @@
     },
 
     "Investigation": {
-        "@type": "Investigation",
+        "@type": "ppeo:Investigation",
         "name": "Investigation of the Impact of AI on Society",
         "description": "A comprehensive study on how artificial intelligence is affecting various aspects of society.",
         "date": "2023-10-01",
