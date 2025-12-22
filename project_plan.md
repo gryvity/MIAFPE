@@ -1,6 +1,16 @@
 # Project Plan
 ## Minimal Information about Field Phenotyping Experiments
 
+### Tasks for this week (dec 3rd '25)
+
+- Create detailed Project plan for the publication
+- gather material
+- contact people involved and inform about my plan
+- Reshape Excel (without examples)
+- Revisit datasets which used the prototyped miafpe tables
+
+
+## IMPORTANT
 Objectives (immediate goals):
 
 1. Transform MIAPPE into a more usable format (RDF/JSON/XML/CSV)
@@ -12,6 +22,11 @@ Objectives (immediate goals):
 
 
 
+- Create Complete Data Map
+- Take Datasets from Julie and Sofie as examples for Field Experiments
+- (Create ARC Templates)
+- Create Access Point for mew Ontologies (discover a set of useful domain-relevant ontologies)
+- Work on KnowledgeBase -> Here I will also collect material for the publication
 
 
 

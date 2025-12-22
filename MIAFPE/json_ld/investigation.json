@@ -1,32 +1,141 @@
 {
-    "@context": {
-        "dc": "http://purl.org/dc/elements/1.1/",
-        "dcterms": "http://purl.org/dc/terms/",
-        "foaf": "http://xmlns.com/foaf/0.1/",
-        "prov": "http://www.w3.org/ns/prov#",
-        "schema": "http://schema.org/",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "owl": "http://www.w3.org/2002/07/owl#",
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "ppeo" : "http://purl.org/ppeo/PPEO.owl"
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "sosa": "http://www.w3.org/ns/sosa/",
+    "time": "http://www.w3.org/2006/time#",
+    
+    "PPEO": "http://purl.org/ppeo/PPEO.owl#",
+    
+    "investigation": "PPEO:investigation",
+    "study": "PPEO:study",
+    "hasName": "PPEO:hasName",
+    "hasDescription": "PPEO:hasDescription",
+    "hasIdentifier": "PPEO:hasIdentifier",
+    "hasExternalIdentifier": "PPEO:hasExternalIdentifier",
+    "hasDOI": "PPEO:hasDOI",
+    "hasSubmissionDate": "PPEO:hasSubmissionDate",
+    "hasPublicReleaseDate": "PPEO:hasPublicReleaseDate",
+    "hasLicense": "PPEO:hasLicense",
+    "hasMIAPPEVersion": "PPEO:hasMIAPPEVersion",
+    "hasAssociatedPublication": "PPEO:hasAssociatedPublication",
+    "hasVersion": "PPEO:hasVersion",
+    "hasPart": "PPEO:hasPart",
+    
+    "Observation": "sosa:Observation",
+    "FeatureOfInterest": "sosa:FeatureOfInterest",
+    "ObservableProperty": "sosa:ObservableProperty",
+    "Procedure": "sosa:Procedure",
+    "Platform": "sosa:Platform",
+    "Sensor": "sosa:Sensor",
+    "hasFeatureOfInterest": "sosa:hasFeatureOfInterest",
+    "observedProperty": "sosa:observedProperty",
+    "usedProcedure": "sosa:usedProcedure",
+    "phenomenonTime": "sosa:phenomenonTime",
+    "resultTime": "sosa:resultTime",
+    "hasSimpleResult": "sosa:hasSimpleResult"
+  },
+  "@id": "doi:10.26165/JUELICH-DATA/QJIY7C",
+  "@type": ["PPEO:investigation", "sosa:Observation"],
+  "hasName": "Experimental data: Field Phenotyping of Ten Wheat Cultivars under Elevated CO2 Shows Seasonal Differences in Chlorophyll Fluorescence, Plant Height and Vegetation Indices",
+  "hasDescription": "Experiment is part of the \"Big baking\" project. Higher CO2 concentrations change the growth dynamics of the C3 plant wheat. Higher yields are accompanied by lower protein contents. Field trials under an atmosphere with increased CO2 levels (FACE experiments) are intended to depict future scenarios and show the effect on the protein composition and baking quality of wheat. Previous breeding objectives may have to be reconsidered. The experimental data consist of the LIFT, PhenoCam, UAV, yield and environmental data.",
+  "hasIdentifier": "doi:10.26165/JUELICH-DATA/QJIY7C",
+  "hasDOI": "doi:10.26165/JUELICH-DATA/QJIY7C",
+  "hasSubmissionDate": {
+    "@type": "xsd:dateTime",
+    "@value": "2023-11-26T00:00:00Z"
+  },
+  "hasPublicReleaseDate": {
+    "@type": "xsd:dateTime",
+    "@value": "2023-12-11T00:00:00Z"
+  },
+  "hasLicense": "CC0 - \"Public Domain Dedication\"",
+  "hasMIAPPEVersion": "1.0",
+  "hasAssociatedPublication": "https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2023.1304751/full",
+  "hasVersion": "1.0",
+  
+  "hasFeatureOfInterest": {
+    "@type": "sosa:FeatureOfInterest",
+    "hasName": "Ten Wheat Cultivars under Elevated CO2",
+    "hasDescription": "Field phenotyping experiment with ten wheat cultivars grown under elevated CO2 conditions (FACE experiment)"
+  },
+  
+  "observedProperty": [
+    {
+      "@type": "sosa:ObservableProperty",
+      "hasName": "Chlorophyll Fluorescence"
     },
-
-    "Investigation": {
-        "@type": "ppeo:Investigation",
-        "name": "Investigation of the Impact of AI on Society",
-        "description": "A comprehensive study on how artificial intelligence is affecting various aspects of society.",
-        "date": "2023-10-01",
-        "participants": [
-            {
-                "@type": "Person",
-                "name": "Dr. John Smith",
-                "affiliation": "University of Technology"
-            },
-            {
-                "@type": "Person",
-                "name": "Dr. Jane Doe",
-                "affiliation": "Institute of Advanced Studies"
-            }
-        ]
+    {
+      "@type": "sosa:ObservableProperty", 
+      "hasName": "Plant Height"
+    },
+    {
+      "@type": "sosa:ObservableProperty",
+      "hasName": "Vegetation Indices"
+    },
+    {
+      "@type": "sosa:ObservableProperty",
+      "hasName": "Yield"
+    },
+    {
+      "@type": "sosa:ObservableProperty",
+      "hasName": "Environmental Parameters"
     }
+  ],
+  
+  "usedProcedure": [
+    {
+      "@type": "sosa:Procedure",
+      "hasName": "LIFT Measurements",
+      "hasDescription": "Laser-Induced Fluorescence Transient measurements"
+    },
+    {
+      "@type": "sosa:Procedure", 
+      "hasName": "PhenoCam Imaging",
+      "hasDescription": "Phenological camera imaging"
+    },
+    {
+      "@type": "sosa:Procedure",
+      "hasName": "UAV-based Phenotyping",
+      "hasDescription": "Unmanned Aerial Vehicle based phenotyping"
+    },
+    {
+      "@type": "sosa:Procedure",
+      "hasName": "FACE Experimental Protocol",
+      "hasDescription": "Free-Air CO2 Enrichment experimental protocol"
+    }
+  ],
+  
+  "hasPart": [
+    {
+      "@type": "PPEO:study",
+      "hasName": "Field Phenotyping Study - Wheat Cultivars under Elevated CO2",
+      "hasDescription": "Study focusing on seasonal differences in various phenotypic traits under elevated CO2 conditions",
+      "hasStartDateTime": {
+        "@type": "xsd:dateTime",
+        "@value": "2023-01-01T00:00:00Z"
+      }
+    }
+  ],
+  
+  "phenomenonTime": {
+    "@type": "time:Interval",
+    "time:hasBeginning": {
+      "@type": "xsd:dateTime",
+      "@value": "2023-01-01T00:00:00Z"
+    },
+    "time:hasEnd": {
+      "@type": "xsd:dateTime", 
+      "@value": "2023-12-31T23:59:59Z"
+    }
+  },
+  
+  "resultTime": {
+    "@type": "xsd:dateTime",
+    "@value": "2023-12-11T00:00:00Z"
+  }
 }

@@ -1,0 +1,949 @@
+{
+  "@graph" : [ {
+    "@id" : "_:b0",
+    "@type" : "foaf:Agent",
+    "name" : {
+      "@language" : "en",
+      "@value" : "W3C/OGC Spatial Data on the Web Working Group"
+    }
+  }, {
+    "@id" : "dcterms:created",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "dcterms:creator",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "dcterms:description",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "dcterms:license",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "dcterms:rights",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "dcterms:title",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "vann:preferredNamespacePrefix",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "vann:preferredNamespaceUri",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "voaf:Vocabulary",
+    "@type" : "owl:Class"
+  }, {
+    "@id" : "schema:domainIncludes",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "schema:rangeIncludes",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "skos:definition",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "skos:example",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "skos:note",
+    "@type" : "owl:AnnotationProperty"
+  }, {
+    "@id" : "time:TemporalEntity",
+    "@type" : "owl:Class"
+  }, {
+    "@id" : "./",
+    "@type" : [ "voaf:Vocabulary", "owl:Ontology" ],
+    "created" : "2017-04-17",
+    "creator" : "_:b0",
+    "description" : {
+      "@language" : "en",
+      "@value" : "This ontology is based on the SSN Ontology by the W3C Semantic Sensor Networks Incubator Group (SSN-XG), together with considerations from the W3C/OGC Spatial Data on the Web Working Group."
+    },
+    "license" : [ "http://www.opengeospatial.org/ogc/Software", "../../../Consortium/Legal/2015/copyright-software-and-document" ],
+    "rights" : "Copyright 2017 W3C/OGC.",
+    "title" : {
+      "@language" : "en",
+      "@value" : "Sensor, Observation, Sample, and Actuator (SOSA) Ontology"
+    },
+    "preferredNamespacePrefix" : "sosa",
+    "preferredNamespaceUri" : "http://www.w3.org/ns/sosa/"
+  }, {
+    "@id" : "sosa:ActuatableProperty",
+    "@type" : [ "rdfs:Class", "owl:Class" ],
+    "comment" : {
+      "@language" : "en",
+      "@value" : "An actuatable quality (property, characteristic) of a FeatureOfInterest."
+    },
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Actuatable Property"
+    },
+    "definition" : {
+      "@language" : "en",
+      "@value" : "An actuatable quality (property, characteristic) of a FeatureOfInterest."
+    },
+    "example" : {
+      "@language" : "en",
+      "@value" : "A window actuator acts by changing the state between a frame and a window. The ability of the window to be opened and closed is its ActuatableProperty."
+    }
+  }, {
+    "@id" : "sosa:Actuation",
+    "@type" : [ "rdfs:Class", "owl:Class" ],
+    "comment" : {
+      "@language" : "en",
+      "@value" : "An Actuation carries out an (Actuation) Procedure to change the state of the world using an Actuator."
+    },
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Actuation"
+    },
+    "definition" : {
+      "@language" : "en",
+      "@value" : "An Actuation carries out an (Actuation) Procedure to change the state of the world using an Actuator."
+    },
+    "example" : {
+      "@language" : "en",
+      "@value" : "The activity of automatically closing a window if the temperature in a room drops below 20 degree Celsius. The activity is the Actuation and the device that closes the window is the Actuator. The Procedure is the rule, plan, or specification that defines the conditions that triggers the Actuation, here a drop in temperature. "
+    }
+  }, {
+    "@id" : "sosa:Actuator",
+    "@type" : [ "rdfs:Class", "owl:Class" ],
+    "comment" : {
+      "@language" : "en",
+      "@value" : "A device that is used by, or implements, an (Actuation) Procedure that changes the state of the world."
+    },
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Actuator"
+    },
+    "definition" : {
+      "@language" : "en",
+      "@value" : "A device that is used by, or implements, an (Actuation) Procedure that changes the state of the world."
+    },
+    "example" : {
+      "@language" : "en",
+      "@value" : "A window actuator for automatic window control, i.e., opening or closing the window."
+    }
+  }, {
+    "@id" : "sosa:FeatureOfInterest",
+    "@type" : [ "rdfs:Class", "owl:Class" ],
+    "comment" : {
+      "@language" : "en",
+      "@value" : "The thing whose property is being estimated or calculated in the course of an Observation to arrive at a Result or whose property is being manipulated by an Actuator, or which is being sampled or transformed in an act of Sampling."
+    },
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Feature Of Interest"
+    },
+    "definition" : {
+      "@language" : "en",
+      "@value" : "The thing whose property is being estimated or calculated in the course of an Observation to arrive at a Result or whose property is being manipulated by an Actuator, or which is being sampled or transformed in an act of Sampling."
+    },
+    "example" : {
+      "@language" : "en",
+      "@value" : "When measuring the height of a tree, the height is the observed ObservableProperty, 20m may be the Result of the Observation, and the tree is the FeatureOfInterest. A window is a FeatureOfInterest for an automatic window control Actuator."
+    }
+  }, {
+    "@id" : "sosa:ObservableProperty",
+    "@type" : [ "rdfs:Class", "owl:Class" ],
+    "comment" : {
+      "@language" : "en",
+      "@value" : "An observable quality (property, characteristic) of a FeatureOfInterest."
+    },
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Observable Property"
+    },
+    "definition" : {
+      "@language" : "en",
+      "@value" : "An observable quality (property, characteristic) of a FeatureOfInterest."
+    },
+    "example" : {
+      "@language" : "en",
+      "@value" : "The height of a tree, the depth of a water body, or the temperature of a surface are examples of observable properties, while the value of a classic car is not (directly) observable but asserted."
+    }
+  }, {
+    "@id" : "sosa:Observation",
+    "@type" : [ "rdfs:Class", "owl:Class" ],
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Act of carrying out an (Observation) Procedure to estimate or calculate a value of a property of a FeatureOfInterest. Links to a Sensor to describe what made the Observation and how; links to an ObservableProperty to describe what the result is an estimate of, and to a FeatureOfInterest to detail what that property was associated with."
+    },
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Observation"
+    },
+    "definition" : {
+      "@language" : "en",
+      "@value" : "Act of carrying out an (Observation) Procedure to estimate or calculate a value of a property of a FeatureOfInterest. Links to a Sensor to describe what made the Observation and how; links to an ObservableProperty to describe what the result is an estimate of, and to a FeatureOfInterest to detail what that property was associated with."
+    },
+    "example" : {
+      "@language" : "en",
+      "@value" : "The activity of estimating the intensity of an Earthquake using the Mercalli intensity scale is an Observation as is measuring the moment magnitude, i.e., the energy released by said earthquake."
+    }
+  }, {
+    "@id" : "sosa:Platform",
+    "@type" : [ "rdfs:Class", "owl:Class" ],
+    "comment" : {
+      "@language" : "en",
+      "@value" : "A Platform is an entity that hosts other entities, particularly Sensors, Actuators, Samplers, and other Platforms."
+    },
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Platform"
+    },
+    "definition" : {
+      "@language" : "en",
+      "@value" : "A Platform is an entity that hosts other entities, particularly Sensors, Actuators, Samplers, and other Platforms."
+    },
+    "example" : {
+      "@language" : "en",
+      "@value" : "A post, buoy, vehicle, ship, aircraft, satellite, cell-phone, human or animal may act as platforms for (technical or biological) sensors or actuators."
+    }
+  }, {
+    "@id" : "sosa:Procedure",
+    "@type" : [ "rdfs:Class", "owl:Class" ],
+    "comment" : {
+      "@language" : "en",
+      "@value" : "A workflow, protocol, plan, algorithm, or computational method specifying how to make an Observation, create a Sample, or make a change to the state of the world (via an Actuator). A Procedure is re-usable, and might be involved in many Observations, Samplings, or Actuations. It explains the steps to be carried out to arrive at reproducible results."
+    },
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Procedure"
+    },
+    "definition" : {
+      "@language" : "en",
+      "@value" : "A workflow, protocol, plan, algorithm, or computational method specifying how to make an Observation, create a Sample, or make a change to the state of the world (via an Actuator). A Procedure is re-usable, and might be involved in many Observations, Samplings, or Actuations. It explains the steps to be carried out to arrive at reproducible results."
+    },
+    "example" : {
+      "@language" : "en",
+      "@value" : "The measured wind speed differs depending on the height of the sensor above the surface, e.g., due to friction. Consequently, procedures for measuring wind speed define a standard height for anemometers above ground, typically 10m for meteorological measures and 2m in Agrometeorology. This definition of height, sensor placement, and so forth are defined by the Procedure."
+    },
+    "note" : {
+      "@language" : "en",
+      "@value" : "Many observations may be created via the same Procedure, the same way as many tables are assembled using the same instructions (as information objects, not their concrete realization)."
+    }
+  }, {
+    "@id" : "sosa:Result",
+    "@type" : [ "rdfs:Class", "owl:Class" ],
+    "comment" : {
+      "@language" : "en",
+      "@value" : "The Result of an Observation, Actuation, or act of Sampling. To store an observation's simple result value one can use the hasSimpleResult property."
+    },
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Result"
+    },
+    "definition" : {
+      "@language" : "en",
+      "@value" : "The Result of an Observation, Actuation, or act of Sampling. To store an observation's simple result value one can use the hasSimpleResult property."
+    },
+    "example" : {
+      "@language" : "en",
+      "@value" : "The value 20 as the height of a certain tree together with the unit, e.g., Meter."
+    }
+  }, {
+    "@id" : "sosa:Sample",
+    "@type" : [ "owl:Class", "rdfs:Class" ],
+    "comment" : [ {
+      "@language" : "en",
+      "@value" : "Samples are artifacts of an observational strategy, and have no significant function outside of their role in the observation process. The characteristics of the samples themselves are of little interest, except perhaps to the manager of a sampling campaign.\n\nA Sample is intended to sample some FatureOfInterest, so there is an expectation of at least one isSampleOf property. However, in some cases the identity, and even the exact type, of the sampled feature may not be known when observations are made using the sampling features."
+    }, {
+      "@language" : "en",
+      "@value" : "Feature which is intended to be representative of a FeatureOfInterest on which Observations may be made."
+    }, {
+      "@language" : "en",
+      "@value" : "Physical samples are sometimes known as 'specimens'."
+    } ],
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Sample"
+    },
+    "definition" : {
+      "@language" : "en",
+      "@value" : "Feature which is intended to be representative of a FeatureOfInterest on which Observations may be made."
+    },
+    "example" : [ {
+      "@language" : "en",
+      "@value" : "A 'station' is essentially an identifiable locality where a sensor system or Procedure may be deployed and an observation made. In the context of the observation model, it connotes the 'world in the vicinity of the station', so the observed properties relate to the physical medium at the station, and not to any physical artifact such as a mooring, buoy, benchmark, monument, well, etc."
+    }, {
+      "@language" : "en",
+      "@value" : "A statistical sample is often designed to be characteristic of an entire population, so that observations can be made regarding the sample that provide a good estimate of the properties of the population."
+    } ],
+    "note" : {
+      "@language" : "en",
+      "@value" : "A transient sample, such as a ships-track or flight-line, might be identified and described, but is unlikely to be revisited exactly."
+    }
+  }, {
+    "@id" : "sosa:Sampler",
+    "@type" : [ "rdfs:Class", "owl:Class" ],
+    "comment" : {
+      "@language" : "en",
+      "@value" : "A device that is used by, or implements, a Sampling Procedure to create or transform one or more samples."
+    },
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Sampler"
+    },
+    "definition" : {
+      "@language" : "en",
+      "@value" : "A device that is used by, or implements, a Sampling Procedure to create or transform one or more samples."
+    },
+    "example" : {
+      "@language" : "en",
+      "@value" : "A ball mill, diamond drill, hammer, hypodermic syringe and needle, image sensor or a soil auger can all act as sampling devices (i.e., be Samplers)."
+    }
+  }, {
+    "@id" : "sosa:Sampling",
+    "@type" : [ "owl:Class", "rdfs:Class" ],
+    "comment" : {
+      "@language" : "en",
+      "@value" : "An act of Sampling carries out a sampling Procedure to create or transform one or more samples."
+    },
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Sampling"
+    },
+    "definition" : {
+      "@language" : "en",
+      "@value" : "An act of Sampling carries out a sampling Procedure to create or transform one or more samples."
+    },
+    "example" : [ {
+      "@language" : "en",
+      "@value" : "Taking a diamond-drill core from a rock outcrop."
+    }, {
+      "@language" : "en",
+      "@value" : "Drilling an observation well."
+    }, {
+      "@language" : "en",
+      "@value" : "Sieving a powder to separate the subset finer than 100-mesh."
+    }, {
+      "@language" : "en",
+      "@value" : "Selecting a subset of a population."
+    }, {
+      "@language" : "en",
+      "@value" : "Establishing a station for environmental monitoring."
+    }, {
+      "@language" : "en",
+      "@value" : "Dividing a field site into quadrants."
+    }, {
+      "@language" : "en",
+      "@value" : "Drawing blood from a patient."
+    }, {
+      "@language" : "en",
+      "@value" : "Digging a pit through a soil sequence."
+    }, {
+      "@language" : "en",
+      "@value" : "Splitting a piece of drill-core to create two new samples."
+    }, {
+      "@language" : "en",
+      "@value" : "Registering an image of the landscape."
+    }, {
+      "@language" : "en",
+      "@value" : "Crushing a rock sample in a ball mill."
+    } ]
+  }, {
+    "@id" : "sosa:Sensor",
+    "@type" : [ "rdfs:Class", "owl:Class" ],
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure. Sensors respond to a stimulus, e.g., a change in the environment, or input data composed from the results of prior Observations, and generate a Result. Sensors can be mounted on Platforms."
+    },
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "Sensor"
+    },
+    "definition" : {
+      "@language" : "en",
+      "@value" : "Device, agent (including humans), or software (simulation) involved in, or implementing, a (Sensing) Procedure. Sensors respond to a stimulus, e.g., a change in the environment, or input data composed from the results of prior Observations, and generate a Result. Sensors can be mounted on Platforms."
+    },
+    "example" : {
+      "@language" : "en",
+      "@value" : "Accelerometers, gyroscopes, barometers, magnetometers, and so forth are Sensors that are typically mounted on a modern smart phone (which acts as Platform). Other examples of sensors include the human eyes."
+    }
+  }, {
+    "@id" : "sosa:actsOnProperty",
+    "@type" : "owl:ObjectProperty",
+    "domainIncludes" : "sosa:Actuation",
+    "rangeIncludes" : "sosa:ActuatableProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Relation between an Actuation and the property of a FeatureOfInterest it is acting upon."
+    },
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "acts on property"
+    },
+    "inverseOf" : "sosa:isActedOnBy",
+    "definition" : {
+      "@language" : "en",
+      "@value" : "Relation between an Actuation and the property of a FeatureOfInterest it is acting upon."
+    },
+    "example" : {
+      "@language" : "en",
+      "@value" : "In the activity (Actuation) of automatically closing a window if the temperature in a room drops below 20 degrees Celsius, the property on which the Actuator acts upon is the state of the window as it changes from being open to being closed. "
+    }
+  }, {
+    "@id" : "sosa:actuationMadeBy",
+    "@type" : "owl:ObjectProperty",
+    "domainIncludes" : "sosa:Actuation",
+    "rangeIncludes" : "sosa:Actuator",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Relation linking an Actuation to the Actuator that made that Actuation."
+    },
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "actuation made by"
+    },
+    "inverseOf" : "sosa:madeActuation",
+    "definition" : {
+      "@language" : "en",
+      "@value" : "Relation linking an Actuation to the Actuator that made that Actuation."
+    }
+  }, {
+    "@id" : "sosa:hasFeatureOfInterest",
+    "@type" : "owl:ObjectProperty",
+    "domainIncludes" : [ "sosa:Observation", "sosa:Sampling", "sosa:Actuation" ],
+    "rangeIncludes" : [ "sosa:FeatureOfInterest", "sosa:Sample" ],
+    "comment" : {
+      "@language" : "en",
+      "@value" : "A relation between an Observation and the entity whose quality was observed, or between an Actuation and the entity whose property was modified, or between an act of Sampling and the entity that was sampled."
+    },
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "has feature of interest"
+    },
+    "inverseOf" : "sosa:isFeatureOfInterestOf",
+    "definition" : {
+      "@language" : "en",
+      "@value" : "A relation between an Observation and the entity whose quality was observed, or between an Actuation and the entity whose property was modified, or between an act of Sampling and the entity that was sampled."
+    },
+    "example" : {
+      "@language" : "en",
+      "@value" : "For example, in an Observation of the weight of a person, the FeatureOfInterest is the person and the property is its weight."
+    }
+  }, {
+    "@id" : "sosa:hasResult",
+    "@type" : "owl:ObjectProperty",
+    "domainIncludes" : [ "sosa:Actuation", "sosa:Observation" ],
+    "rangeIncludes" : "sosa:Result",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Relation linking an Observation and a Sensor or Actuator and a Result, which contains a value representing the value associated with the observed Property."
+    },
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "has result"
+    },
+    "inverseOf" : "sosa:isResultOf",
+    "definition" : {
+      "@language" : "en",
+      "@value" : "Relation linking an Observation and a Sensor or Actuator and a Result, which contains a value representing the value associated with the observed Property."
+    }
+  }, {
+    "@id" : "sosa:hasResultingSample",
+    "@type" : "owl:ObjectProperty",
+    "domainIncludes" : "sosa:Sampling",
+    "rangeIncludes" : "sosa:Sample",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Relation linking an act of Sampling and the new Sample created as a result."
+    },
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "has resulting sample"
+    },
+    "inverseOf" : "sosa:isSamplingResultOf",
+    "definition" : {
+      "@language" : "en",
+      "@value" : "Relation linking an act of Sampling and the new Sample created as a result."
+    }
+  }, {
+    "@id" : "sosa:hasSample",
+    "@type" : "owl:ObjectProperty",
+    "domainIncludes" : "sosa:FeatureOfInterest",
+    "rangeIncludes" : "sosa:Sample",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Relation between a FeatureOfInterest and the Sample used to represent it."
+    },
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "has sample"
+    },
+    "inverseOf" : "sosa:isSampleOf",
+    "definition" : {
+      "@language" : "en",
+      "@value" : "Relation between a FeatureOfInterest and the Sample used to represent it."
+    }
+  }, {
+    "@id" : "sosa:hasSimpleResult",
+    "@type" : "owl:DatatypeProperty",
+    "domainIncludes" : [ "sosa:Observation", "sosa:Actuation" ],
+    "comment" : {
+      "@language" : "en",
+      "@value" : "The simple value of an Observation or Actuation."
+    },
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "has simple result"
+    },
+    "definition" : {
+      "@language" : "en",
+      "@value" : "The simple value of an Observation or Actuation."
+    },
+    "example" : {
+      "@language" : "en",
+      "@value" : "For instance, the values 23 or true."
+    }
+  }, {
+    "@id" : "sosa:hosts",
+    "@type" : "owl:ObjectProperty",
+    "domainIncludes" : "sosa:Platform",
+    "rangeIncludes" : [ "sosa:Platform", "sosa:Actuator", "sosa:Sampler", "sosa:Sensor" ],
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Relation between a Platform and a Sensor, Actuator, Sampler, or Platform, hosted or mounted on it."
+    },
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "hosts"
+    },
+    "inverseOf" : "sosa:isHostedBy",
+    "definition" : {
+      "@language" : "en",
+      "@value" : "Relation between a Platform and a Sensor, Actuator, Sampler, or Platform, hosted or mounted on it."
+    }
+  }, {
+    "@id" : "sosa:isActedOnBy",
+    "@type" : "owl:ObjectProperty",
+    "domainIncludes" : "sosa:ActuatableProperty",
+    "rangeIncludes" : "sosa:Actuation",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Relation between an ActuatableProperty of a FeatureOfInterest and an Actuation changing its state."
+    },
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "is acted on by"
+    },
+    "inverseOf" : "sosa:actsOnProperty",
+    "definition" : {
+      "@language" : "en",
+      "@value" : "Relation between an ActuatableProperty of a FeatureOfInterest and an Actuation changing its state."
+    },
+    "example" : {
+      "@language" : "en",
+      "@value" : "In the activity (Actuation) of automatically closing a window if the temperature in a room drops below 20 degrees Celsius, the property on which the Actuator acts upon is the state of the window as it changes from being open to being closed. "
+    }
+  }, {
+    "@id" : "sosa:isFeatureOfInterestOf",
+    "@type" : "owl:ObjectProperty",
+    "domainIncludes" : [ "sosa:FeatureOfInterest", "sosa:Sample" ],
+    "rangeIncludes" : [ "sosa:Actuation", "sosa:Sampling", "sosa:Observation" ],
+    "comment" : {
+      "@language" : "en",
+      "@value" : "A relation between a FeatureOfInterest and an Observation about it, an Actuation acting on it, or an act of Sampling that sampled it."
+    },
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "is feature of interest of"
+    },
+    "inverseOf" : "sosa:hasFeatureOfInterest",
+    "definition" : {
+      "@language" : "en",
+      "@value" : "A relation between a FeatureOfInterest and an Observation about it, an Actuation acting on it, or an act of Sampling that sampled it."
+    }
+  }, {
+    "@id" : "sosa:isHostedBy",
+    "@type" : "owl:ObjectProperty",
+    "domainIncludes" : [ "sosa:Platform", "sosa:Sampler", "sosa:Sensor", "sosa:Actuator" ],
+    "rangeIncludes" : "sosa:Platform",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Relation between a Sensor, Actuator, Sampler, or Platform, and the Platform that it is mounted on or hosted by."
+    },
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "is hosted by"
+    },
+    "inverseOf" : "sosa:hosts",
+    "definition" : {
+      "@language" : "en",
+      "@value" : "Relation between a Sensor, Actuator, Sampler, or Platform, and the Platform that it is mounted on or hosted by."
+    }
+  }, {
+    "@id" : "sosa:isObservedBy",
+    "@type" : "owl:ObjectProperty",
+    "domainIncludes" : "sosa:ObservableProperty",
+    "rangeIncludes" : "sosa:Sensor",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Relation between an ObservableProperty and the Sensor able to observe it."
+    },
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "is observed by"
+    },
+    "inverseOf" : "sosa:observes",
+    "definition" : {
+      "@language" : "en",
+      "@value" : "Relation between an ObservableProperty and the Sensor able to observe it."
+    }
+  }, {
+    "@id" : "sosa:isResultOf",
+    "@type" : "owl:ObjectProperty",
+    "domainIncludes" : "sosa:Result",
+    "rangeIncludes" : [ "sosa:Actuation", "sosa:Observation" ],
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Relation linking a Result to the Observation or Actuation that created or caused it."
+    },
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "is result of"
+    },
+    "inverseOf" : "sosa:hasResult",
+    "definition" : {
+      "@language" : "en",
+      "@value" : "Relation linking a Result to the Observation or Actuation that created or caused it."
+    }
+  }, {
+    "@id" : "sosa:isSampleOf",
+    "@type" : "owl:ObjectProperty",
+    "domainIncludes" : "sosa:Sample",
+    "rangeIncludes" : "sosa:FeatureOfInterest",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Relation from a Sample to the FeatureOfInterest that it is intended to be representative of."
+    },
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "is sample of"
+    },
+    "inverseOf" : "sosa:hasSample",
+    "definition" : {
+      "@language" : "en",
+      "@value" : "Relation from a Sample to the FeatureOfInterest that it is intended to be representative of."
+    }
+  }, {
+    "@id" : "sosa:isSamplingResultOf",
+    "@type" : "owl:ObjectProperty",
+    "domainIncludes" : "sosa:Sample",
+    "rangeIncludes" : "sosa:Sampling",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Relation linking a Sample to the act of Sampling that created or caused it."
+    },
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "is sampling result of"
+    },
+    "inverseOf" : "sosa:hasResultingSample",
+    "definition" : {
+      "@language" : "en",
+      "@value" : "Relation linking a Sample to the act of Sampling that created or caused it."
+    }
+  }, {
+    "@id" : "sosa:madeActuation",
+    "@type" : "owl:ObjectProperty",
+    "domainIncludes" : "sosa:Actuator",
+    "rangeIncludes" : "sosa:Actuation",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Relation between an Actuator and the Actuation it has made."
+    },
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "made actuation"
+    },
+    "inverseOf" : "sosa:actuationMadeBy",
+    "definition" : {
+      "@language" : "en",
+      "@value" : "Relation between an Actuator and the Actuation it has made."
+    }
+  }, {
+    "@id" : "sosa:madeBySampler",
+    "@type" : "owl:ObjectProperty",
+    "domainIncludes" : "sosa:Sampling",
+    "rangeIncludes" : "sosa:Sampler",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Relation linking an act of Sampling to the Sampler (sampling device or entity) that made it."
+    },
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "made by sampler"
+    },
+    "inverseOf" : "sosa:madeSampling",
+    "definition" : {
+      "@language" : "en",
+      "@value" : "Relation linking an act of Sampling to the Sampler (sampling device or entity) that made it."
+    }
+  }, {
+    "@id" : "sosa:madeBySensor",
+    "@type" : "owl:ObjectProperty",
+    "domainIncludes" : "sosa:Observation",
+    "rangeIncludes" : "sosa:Sensor",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Relation between an Observation and the Sensor which made the Observation."
+    },
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "made by sensor"
+    },
+    "inverseOf" : "sosa:madeObservation",
+    "definition" : {
+      "@language" : "en",
+      "@value" : "Relation between an Observation and the Sensor which made the Observation."
+    }
+  }, {
+    "@id" : "sosa:madeObservation",
+    "@type" : "owl:ObjectProperty",
+    "domainIncludes" : "sosa:Sensor",
+    "rangeIncludes" : "sosa:Observation",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Relation between a Sensor and an Observation it has made."
+    },
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "made observation"
+    },
+    "inverseOf" : "sosa:madeBySensor",
+    "definition" : {
+      "@language" : "en",
+      "@value" : "Relation between a Sensor and an Observation it has made."
+    }
+  }, {
+    "@id" : "sosa:madeSampling",
+    "@type" : "owl:ObjectProperty",
+    "domainIncludes" : "sosa:Sampler",
+    "rangeIncludes" : "sosa:Sampling",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Relation between a Sampler (sampling device or entity) and the Sampling act it performed."
+    },
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "made sampling"
+    },
+    "inverseOf" : "sosa:madeBySampler",
+    "definition" : {
+      "@language" : "en",
+      "@value" : "Relation between a Sampler (sampling device or entity) and the Sampling act it performed."
+    }
+  }, {
+    "@id" : "sosa:observedProperty",
+    "@type" : "owl:ObjectProperty",
+    "domainIncludes" : "sosa:Observation",
+    "rangeIncludes" : "sosa:ObservableProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Relation linking an Observation to the property that was observed. The ObservableProperty should be a property of the FeatureOfInterest (linked by hasFeatureOfInterest) of this Observation."
+    },
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "observed property"
+    },
+    "definition" : {
+      "@language" : "en",
+      "@value" : "Relation linking an Observation to the property that was observed. The ObservableProperty should be a property of the FeatureOfInterest (linked by hasFeatureOfInterest) of this Observation."
+    }
+  }, {
+    "@id" : "sosa:observes",
+    "@type" : "owl:ObjectProperty",
+    "domainIncludes" : "sosa:Sensor",
+    "rangeIncludes" : "sosa:ObservableProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Relation between a Sensor and an ObservableProperty that it is capable of sensing."
+    },
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "observes"
+    },
+    "inverseOf" : "sosa:isObservedBy",
+    "definition" : {
+      "@language" : "en",
+      "@value" : "Relation between a Sensor and an ObservableProperty that it is capable of sensing."
+    }
+  }, {
+    "@id" : "sosa:phenomenonTime",
+    "@type" : "owl:ObjectProperty",
+    "domainIncludes" : [ "sosa:Actuation", "sosa:Observation", "sosa:Sampling" ],
+    "rangeIncludes" : "time:TemporalEntity",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "The time that the Result of an Observation, Actuation or Sampling applies to the FeatureOfInterest. Not necessarily the same as the resultTime. May be an Interval or an Instant, or some other compound TemporalEntity."
+    },
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "phenomenon time"
+    },
+    "definition" : {
+      "@language" : "en",
+      "@value" : "The time that the Result of an Observation, Actuation or Sampling applies to the FeatureOfInterest. Not necessarily the same as the resultTime. May be an Interval or an Instant, or some other compound TemporalEntity."
+    }
+  }, {
+    "@id" : "sosa:resultTime",
+    "@type" : "owl:DatatypeProperty",
+    "domainIncludes" : [ "sosa:Actuation", "sosa:Observation", "sosa:Sampling" ],
+    "comment" : {
+      "@language" : "en",
+      "@value" : "The result time is the instant of time when the Observation, Actuation or Sampling activity was completed."
+    },
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "result time"
+    },
+    "range" : "xsd:dateTime",
+    "definition" : {
+      "@language" : "en",
+      "@value" : "The result time is the instant of time when the Observation, Actuation or Sampling activity was completed."
+    }
+  }, {
+    "@id" : "sosa:usedProcedure",
+    "@type" : "owl:ObjectProperty",
+    "domainIncludes" : [ "sosa:Actuation", "sosa:Observation", "sosa:Sampling" ],
+    "rangeIncludes" : "sosa:Procedure",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "A relation to link to a re-usable Procedure used in making an Observation, an Actuation, or a Sample, typically through a Sensor, Actuator or Sampler."
+    },
+    "isDefinedBy" : "./",
+    "label" : {
+      "@language" : "en",
+      "@value" : "used procedure"
+    },
+    "definition" : {
+      "@language" : "en",
+      "@value" : "A relation to link to a re-usable Procedure used in making an Observation, an Actuation, or a Sample, typically through a Sensor, Actuator or Sampler."
+    }
+  }, {
+    "@id" : "foaf:Agent",
+    "@type" : "owl:Class"
+  }, {
+    "@id" : "foaf:name",
+    "@type" : "owl:AnnotationProperty"
+  } ],
+  "@context" : {
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "definition" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#definition"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "domainIncludes" : {
+      "@id" : "http://schema.org/domainIncludes",
+      "@type" : "@id"
+    },
+    "rangeIncludes" : {
+      "@id" : "http://schema.org/rangeIncludes",
+      "@type" : "@id"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+      "@type" : "@id"
+    },
+    "inverseOf" : {
+      "@id" : "http://www.w3.org/2002/07/owl#inverseOf",
+      "@type" : "@id"
+    },
+    "example" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#example"
+    },
+    "note" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#note"
+    },
+    "range" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#range",
+      "@type" : "@id"
+    },
+    "name" : {
+      "@id" : "http://xmlns.com/foaf/0.1/name"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license",
+      "@type" : "@id"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "rights" : {
+      "@id" : "http://purl.org/dc/terms/rights"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator",
+      "@type" : "@id"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "schema" : "http://schema.org/",
+    "owl" : "http://www.w3.org/2002/07/owl#",
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "xsd" : "http://www.w3.org/2001/XMLSchema#",
+    "skos" : "http://www.w3.org/2004/02/skos/core#",
+    "voaf" : "http://purl.org/vocommons/voaf#",
+    "dcterms" : "http://purl.org/dc/terms/",
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+    "time" : "http://www.w3.org/2006/time#",
+    "vann" : "http://purl.org/vocab/vann/",
+    "foaf" : "http://xmlns.com/foaf/0.1/",
+    "sosa" : "http://www.w3.org/ns/sosa/"
+  }
+}
