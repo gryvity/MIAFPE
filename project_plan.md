@@ -1,62 +1,79 @@
 # Project Plan
-## Minimal Information about Field Phenotyping Experiments
+## Minimal Information about Field Phenotyping Experiments Overview
 
-### Tasks for this week (dec 3rd '25)
+Here, the central planning stages are documented for the project. This will guide me through the project step-by-step. These steps include a schedule for:
+- Literature Review
+- Protoyping
+- Paper Structure and Writing
 
-- Create detailed Project plan for the publication
-- gather material
-- contact people involved and inform about my plan
-- Reshape Excel (without examples)
-- Revisit datasets which used the prototyped miafpe tables
+This document will track the progress of the project. Furthermore here I will provide some space for loose notes and ideas that might be useful for the project.
 
+The goal of this particular project is to create a standardized template for documenting field phenotyping experiements, building upon the existing MIAPPE standard, and adopting further metadata standards to cover terminologies and concepts from the domain of remote sensing and computer vision and robotics. The final template should be simple and userfriendly without sacrificing semantic expressivity and FAIR compliance. To do so, I will merge relevant ontologies and vocabularies into onde MIAFPE ontology, generate a data model and finally implement the template in a user-friendly format, e.g. as a web application or a fillable PDF form.
 
-## IMPORTANT
-Objectives (immediate goals):
+Furthermore, this project aims on tranforming the documentation into a machine-readable format, e.g. JSON-LD or RDF. These machine-readable formats will be designed to be in an appropriate shape in order to allow the development of embeddings for machine learning applications in the future. Since the datamodel resemble a graphlike structure, it is likely that graph neural networks (GNNs) will be a suitable choice for such applications.
 
-1. Transform MIAPPE into a more usable format (RDF/JSON/XML/CSV)
-2. Extend MIAPPE with SOSA/SSN ontology in a modular way
-3. Pick two case investigations to demonstrate the use of MIAPPE Sensor extension and the transformed formats
+For March 2026, I need to have a working protoype as well as a knowledge base.
 
 
-## MIAFPE Elements
+## Schedule 
+| Task                          | Start Date | End Date   | Status       |
+|-------------------------------|------------|------------|--------------|
+| Prototype Planning | 2026-01-05 | 2026-01-07 | Started     |
+| Prototyping                   | 2026-01-07 | 2026-01-09 | Not Started  |
+| Literature Review             | 2026-01-12 | 2026-01-16 | Not Started  |
+| Paper Structure Planning      | 2026-01-16 | 2026-01-18 | Not Started  |
+| Writing First Draft          | 2026-01-18 | 2026-01-30 | Not Started  |
+
+
+## Paper Structure
+
+Prelimary structure of the paper (2026-01-05):
+
+- Introduction
+    - Background emergence of interdisciplinary research in plant phenotyping adapting new technologies from computer vision, robotics and remote sensing
+    - Motivation of standardized documentation of experiemental data
+    - Minimum Information standards in life sciences.
+    - Ontologies and Vocabularies for metadata standardization
+    - FAIR principles and the advent of machine-readable metadata
+    - Aim of this work: 
+        - Create a standardized template for documenting field phenotyping experiements, building upon the existing MIAPPE standard, and adopting further metadata standards to cover terminologies and concepts from the domain of remote sensing and computer vision and robotics.
+        - Implement the template in a user-friendly format, e.g. as a web application or a fillable PDF form.
+        - Transforming the documentation into a machine-readable format, e.g. JSON-LD or RDF.
+- Related Work
+    - Overview of existing MI standards in life sciences
+    - Overview of existing ontologies and vocabularies relevant for plant phenotyping, remote sensing, computer vision and robotics
+    - Overview of existing tools and templates for documenting field phenotyping experiments
+- Methods
+    - Ontology and Vocabulary Selection and Merging
+    - Data Model Design
+    - Template Implementation
+    - Machine-Readable Format Design
+- Results
+    - Finalized Template
+    - Machine-Readable Format
+- Discussion
+    - Evaluation of the Template
+    - Comparison with Existing Standards
+    - Limitations and Future Work -> here I would love to discuss the potential of having machine-readable metadata for training machine learning models, e.g. GNNs in order to find patterns in phenotyping experiements, that could help identify 'contextual' similarities between experiements, which could be potentially useful for machine learning tasks, meta analyses or even experimental design.
+
+
+## Prototyping Steps
+
+
+- Step 1: Gather existing Ontologies and Vocabularies relevant for the project
 
 
 
-- Create Complete Data Map
-- Take Datasets from Julie and Sofie as examples for Field Experiments
-- (Create ARC Templates)
-- Create Access Point for mew Ontologies (discover a set of useful domain-relevant ontologies)
-- Work on KnowledgeBase -> Here I will also collect material for the publication
+## Literature Selection
+
+Within this section I will collect relevant literature for the project and give a short summary which mainly focusses on the reasoning why this paper is relevant for the project.
 
 
 
 
 
+## Notes and Ideas
 
-Future Goals (long-term):
-
-- FORK MIAPPE
-- include data model (protege)
-- include MIAPPE examples
-- Think about connection to BrAPI and ARC
-- Transformer Tools
-
-Too-Kit (idea section)
-- MIAPPE Validator: gives feedback on MIAPPE compliance
-- MIAPPE autocompleter: suggests values based on previous entries
-- MIAPPE designer: tool to help researchers fill in MIAPPE metadata
-- MAIPPE to RDF converter: converts MIAPPE metadata to RDF format
-- MIAPPE to JSON converter: converts MIAPPE metadata to JSON format
-- MIAPPE to XML converter: converts MIAPPE metadata to XML format
-- MIAPPE to CSV converter: converts MIAPPE metadata to CSV format
-- MIAPPE to BrAPI converter: converts MIAPPE metadata to BrAPI format
-- MIAPPE to ARC converter: converts MIAPPE metadata to ARC format
-- MIAPPE to ISA converter: converts MIAPPE metadata to ISA format
-- MIAPPE Transformer: a tool for transforming a MIAPPE file into a vector representation capable of measuring similarities between datasets
-- Geo Scraper: a tool for gathering geoinformation within a dataset
-- MIAPPE Visualizer: a tool for visualizing MIAPPE metadata in a user-friendly way
-- MIAPPE API: a RESTful API for accessing MIAPPE metadata and tools
-- nice tool for gathering datafiles
-
-Study Case (suggestions)
-- Harvesting metadata from dataset in order to find similarities within different datasets (temporal, spatial, contextual)
+- Potential Project Partners: WUR, APPN, Fraunhofer, Roland, Pommiers, Björn
+- Try to emphasize a focus on data file contents and relationship between data files within an experiment
+- Try to find a significant list of usecases that are already implementing MIAPPE or similar standards and identify interdisciplinary components within these uescases and their documentation needs
