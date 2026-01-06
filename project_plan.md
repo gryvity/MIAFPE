@@ -59,6 +59,10 @@ Prelimary structure of the paper (2026-01-05):
 
 ## Prototyping Steps
 
+GOALS:
+Create an "ontology-based" template for documenting field phenotyping experiements and data derived thereof, that is build upon MIAPPE as an already existing standard, which is further modified (and made modifiable) to include external ontologies and link concepts within these ontologies. This means we include an abstract concept ontology to the MIAPPE ontology, which can be used as a template to fill in this conceptual ontology with an explicit ontology when relevant to a certain experiment.
+
+In other words, the idea is to create a concept ontology which is embedded into an existing ontology, such as the MIAPPE ontology. If applicable, the ontology concept can be filled with existing concepts from an external ontology, e.g. SOSA/SSN for Sensors, or OBOE for observations, etc.
 
 - Step 1: Gather existing Ontologies and Vocabularies relevant for the project
 
@@ -77,3 +81,25 @@ Within this section I will collect relevant literature for the project and give 
 - Potential Project Partners: WUR, APPN, Fraunhofer, Roland, Pommiers, Björn
 - Try to emphasize a focus on data file contents and relationship between data files within an experiment
 - Try to find a significant list of usecases that are already implementing MIAPPE or similar standards and identify interdisciplinary components within these uescases and their documentation needs
+- Graph embedding: https://towardsdatascience.com/graph-embeddings-explained-f0d8d1c49ec/
+
+
+## Temporary
+
+Hello I need your assistance in bringing some structure into a complex task. I will outline the project`s intent and the plan of achieving it, as well as provide you with some data which is necessary for building a protoype. I would like you to help me in the task of planning the prototyping steps with me.
+
+I am currently working as a data scientist in plant science and have the task to make phenotyping data FAIR (according the FAIR principles by Wilkinson et al.). To do so, I am focussing on helping the researchers in documenting their experiments, mostly in form of tables (e.g. Excel sheets). Mostly I recomment MIAPPE, since this is a community standard designed for plant phenotyping experiments. MIAPPE is basically a checklist, which helps researchers to give metadata about their experiements, which is helpful for potential resuse of the data in the future, e.g. for machine learning applications or meta alayses, or to prevent redundancy. But MIAPPE as a table does have some limitations: Althoug MIAPPE has been transformed into an ontology (https://github.com/MIAPPE/MIAPPE-ontology) (see also attached file: PPEO.owl), it misses a user-friendly way to fill further metadata in a standardized way, for example for sensors, procedures, remote sensing techniques, computer vision methods, robotics platforms etc. These domains are becoming more and more relevant for plant phenotying, since more and more data is being collected with these technologies. The formalisation of MIAPPE as an ontology provides data modeling capabilities, which could be used in knowledge discovery utilizing the potential of the complex graphlike structure of ontologies, however, metadata provided in the miappe format is mostly 'just an excel table'. I woul like to design a versatil adaptation of MIAPPE as a ontology-based data model, which provides the possibility to easily extend it with further ontologies, meaning easily integrating data model into MIAPPE data models, which allows reseaerchers to provide more detailed metadata, without sacrifizing user-friendliness and the 'minimum information approach'.
+
+To be more concrete I am planning to realize the following features in a prototype:
+- from the MIAPPE Ontology construct a graph data model (design the classes, properties and relationships).
+- provide access points into the data model for ontology extensions, for (1) selected ontologies relevant for field phenotyping experiemnts such as SOSA/SSN (for sensors and observations), OBOE (for observations and measurements), and (2) a general concept ontology, which can be used to fill in arbitrary ontologies into the data model.
+- as a software implementation, I am thinking it starts from the data model site, using MIAPPE as it's core, and from that data model checklist tables can be generated, e.g. when genrating an excel just from the miappe core we have an excel file which resembles the current miappe standard. While adding more ontologies to the data model, we simply extend the excel file with more data sheets.
+- when a researcher fills in the excel file, we can easily transform the table into a machine-readable graph format.
+
+One aspect which is important to keep in mind, that each entry in the table needs to be linked to a concept in the ontology, therefor we need to include property information in the table as well and provide identifiers for each entry. As a quality of life way to do so it would be nice if IDs are automatically generated when filling in the tables (but leave the possibility to manually set them as well).
+
+As you can see I am trying to think this problem from the data model as center peace. For now it would be helpful to have a prototype which allows select a set of ontologies (for somplicity just SOSA/SSN (https://www.w3.org/TR/vocab-ssn/)) and generate a table which resembles the MIAPPE standard, with extra fields for the selected ontologies. For now I will not implement something that generates IDs but instead leave it for the researcher to do it manually. I also want to add columns which provide class/data properties, where the researcher can provide the links to the ontology concepts. After finalizing the excel table, the researcher should be able to transform the table into a machine-readable JSON-LD or RDF format.
+
+For realizing the project, I am thinking of implementing the prototype in python. That means I need a program, which can read an OWL file, and converts it into a table format. For the data model design it is probably helpful to have a visual presentation of the data model and to have a master owl file, where we can control the linkages by defining object properties' domains and ranges and also by defining synonyms for classes and properties. For the prototype it would be sufficient to have the MIAPPE ontology as well as the SSN/SOSA ontology as files as well as the master owl file, which links the two ontologies together. From this master file we can generate a table format. 
+
+I am on a tight schedule, since I need to present the protoype as quickly as possible in a scientific paper. Therefore I would love to here your thoughts on the project, suggestions of the prototyping steps and any ideas you might have to make this project successful. 
