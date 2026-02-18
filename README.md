@@ -1,5 +1,5 @@
 <h1>Minimum Information About Field Phenotyping Experiments</h1> 
-<h2>SUBTITLE</h2>
+<h2>Harvest Knowledge from Data</h2>
 
 
 

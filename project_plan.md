@@ -15,14 +15,7 @@ Furthermore, this project aims on tranforming the documentation into a machine-r
 For March 2026, I need to have a working protoype as well as a knowledge base.
 
 
-## Schedule 
-| Task                          | Start Date | End Date   | Status       |
-|-------------------------------|------------|------------|--------------|
-| Prototype Planning | 2026-01-05 | 2026-01-07 | Started     |
-| Prototyping                   | 2026-01-07 | 2026-01-09 | Not Started  |
-| Literature Review             | 2026-01-12 | 2026-01-16 | Not Started  |
-| Paper Structure Planning      | 2026-01-16 | 2026-01-18 | Not Started  |
-| Writing First Draft          | 2026-01-18 | 2026-01-30 | Not Started  |
+
 
 
 ## Paper Structure
