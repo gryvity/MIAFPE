@@ -1,0 +1,380 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#"
+     xml:base="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:ssn="http://www.w3.org/ns/ssn/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:ppeo="http://purl.org/ppeo/PPEO.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:sosa="http://www.w3.org/ns/sosa/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#deployedOnPlatform -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#deployedOnPlatform">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#inDeployment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#deployedSystem -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#deployedSystem">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#hasDeployment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#forProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#forProperty">
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#forProperty"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#Property"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#hasDeployment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#hasDeployment"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#hasFeatureOfInterest -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#hasFeatureOfInterest">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#isFeatureOfInterestOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#hasInput -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#hasInput"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#hasObservedProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#hasObservedProperty"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#hasOutput -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#hasOutput"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#hasProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#hasProperty">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#isPropertyOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#hasSubSystem -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#hasSubSystem"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#hosts -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#hosts">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#isHostedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#implementedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#implementedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#implements"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#implements -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#implements"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#inDeployment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#inDeployment"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#isFeatureOfInterestOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#isFeatureOfInterestOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#isHostedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#isHostedBy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#isObservedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#isObservedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#observes"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#isPropertyOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#isPropertyOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#madeBySensor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#madeBySensor">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#madeObservation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#madeObservation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#madeObservation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#observes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#observes"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#usedProcedure -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#usedProcedure">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#usedProcedure"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#Observation"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#BiologicalMaterial -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#BiologicalMaterial">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#FeatureOfInterest"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#DataFile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#DataFile"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#Deployment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#Deployment"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#Environment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#Environment"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#Event -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#Event"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#Factor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#Factor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#FeatureOfInterest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#FeatureOfInterest"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#Input -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#Input"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#Investigation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#Investigation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#ObservableProperty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#ObservableProperty">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#Property"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#isObservedBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#Sensor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#Observation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#Observation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#ObservationUnit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#ObservationUnit"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#ObservedVariable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#ObservedVariable"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#Output -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#Output"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#Platform -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#Platform"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#Procedure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#Procedure"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#Property -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#Property"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#Sample -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#Sample"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#Sensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#Sensor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#Study -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#Study"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#System -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#System"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#DataFile"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#Deployment"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#Environment"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#Event"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#Factor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#FeatureOfInterest"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#Input"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#Investigation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#Observation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#ObservationUnit"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#ObservedVariable"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#Output"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#Person"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#Platform"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#Procedure"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#Property"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#Sample"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#Sensor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#Study"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/gryvity/ontologies/2026/1/miappexsosa#System"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
