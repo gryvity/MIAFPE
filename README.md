@@ -3,9 +3,10 @@
 
 
 
-## Introduction
+<h3>Introduction</h3>
 
-### Minimum Information Standards
+<h4>Minimum Information Standards</h4>
+
 https://www.ebi.ac.uk/training/online/courses/bioinformatics-terrified/what-makes-a-good-bioinformatics-database/minimum-information-standards/
 
 
