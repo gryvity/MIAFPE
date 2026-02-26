@@ -75,6 +75,7 @@ Within this section I will collect relevant literature for the project and give 
 - Try to emphasize a focus on data file contents and relationship between data files within an experiment
 - Try to find a significant list of usecases that are already implementing MIAPPE or similar standards and identify interdisciplinary components within these uescases and their documentation needs
 - Graph embedding: https://towardsdatascience.com/graph-embeddings-explained-f0d8d1c49ec/
+- Think about the inclusion of ICASA datamodels: https://github.com/DSSAT/ICASA-Dictionary/tree/main
 
 
 ## Temporary

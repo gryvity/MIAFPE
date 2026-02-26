@@ -326,6 +326,7 @@
 
     <owl:Class rdf:about="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#BiologicalMaterial">
         <rdfs:subClassOf rdf:resource="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#FeatureOfInterest"/>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ppeo/ppeo.owl#biological_material</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -340,13 +341,37 @@
 
     <owl:Class rdf:about="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#Country">
         <rdfs:subClassOf rdf:resource="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#Location"/>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ppeo/ppeo.owl#country</rdfs:isDefinedBy>
     </owl:Class>
     
 
 
     <!-- https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#DataFile -->
 
-    <owl:Class rdf:about="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#DataFile"/>
+    <owl:Class rdf:about="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#DataFile">
+        <rdfs:subClassOf rdf:nodeID="genid8"/>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ppeo/ppeo.owl#data_file</rdfs:isDefinedBy>
+    </owl:Class>
+    <owl:Restriction rdf:nodeID="genid8">
+        <owl:onProperty rdf:resource="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#hasIdentifier"/>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+        <owl:onDataRange>
+            <rdfs:Datatype>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#anyURI"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+                </owl:unionOf>
+            </rdfs:Datatype>
+        </owl:onDataRange>
+    </owl:Restriction>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#DataFile"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:nodeID="genid8"/>
+        <rdfs:comment xml:lang="en">Unique Identifier which acts as unambiguous link between Instances.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ppeo/ppeo.owl#hasIdentifier</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Unique Identifier</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -358,25 +383,41 @@
 
     <!-- https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#Environment -->
 
-    <owl:Class rdf:about="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#Environment"/>
+    <owl:Class rdf:about="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#Environment">
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ppeo/ppeo.owl#environment</rdfs:isDefinedBy>
+    </owl:Class>
     
 
 
     <!-- https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#Event -->
 
-    <owl:Class rdf:about="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#Event"/>
+    <owl:Class rdf:about="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#Event">
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ppeo/ppeo.owl#event</rdfs:isDefinedBy>
+    </owl:Class>
     
 
 
     <!-- https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#ExperimentalDesign -->
 
-    <owl:Class rdf:about="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#ExperimentalDesign"/>
+    <owl:Class rdf:about="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#ExperimentalDesign">
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ppeo/ppeo.owl#experimental_design</rdfs:isDefinedBy>
+    </owl:Class>
     
 
 
     <!-- https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#Factor -->
 
-    <owl:Class rdf:about="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#Factor"/>
+    <owl:Class rdf:about="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#Factor">
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ppeo/ppeo.owl#factor</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#FactorValue -->
+
+    <owl:Class rdf:about="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#FactorValue">
+        <rdfs:subClassOf rdf:resource="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#Factor"/>
+    </owl:Class>
     
 
 
@@ -390,6 +431,7 @@
 
     <owl:Class rdf:about="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#GrowthFacility">
         <rdfs:subClassOf rdf:resource="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#Location"/>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ppeo/ppeo.owl#growth_facility</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -404,7 +446,9 @@
 
     <!-- https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#Institution -->
 
-    <owl:Class rdf:about="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#Institution"/>
+    <owl:Class rdf:about="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#Institution">
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ppeo/ppeo.owl#institution</rdfs:isDefinedBy>
+    </owl:Class>
     
 
 
@@ -417,23 +461,24 @@
                 <owl:allValuesFrom rdf:resource="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#Investigation"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:nodeID="genid9"/>
-        <rdfs:subClassOf rdf:nodeID="genid11"/>
+        <rdfs:subClassOf rdf:nodeID="genid14"/>
         <rdfs:subClassOf rdf:nodeID="genid16"/>
         <rdfs:subClassOf rdf:nodeID="genid21"/>
-        <rdfs:subClassOf rdf:nodeID="genid23"/>
-        <rdfs:subClassOf rdf:nodeID="genid25"/>
-        <rdfs:subClassOf rdf:nodeID="genid27"/>
-        <rdfs:subClassOf rdf:nodeID="genid29"/>
-        <rdfs:subClassOf rdf:nodeID="genid31"/>
-        <rdfs:subClassOf rdf:nodeID="genid33"/>
+        <rdfs:subClassOf rdf:nodeID="genid26"/>
+        <rdfs:subClassOf rdf:nodeID="genid28"/>
+        <rdfs:subClassOf rdf:nodeID="genid30"/>
+        <rdfs:subClassOf rdf:nodeID="genid32"/>
+        <rdfs:subClassOf rdf:nodeID="genid34"/>
+        <rdfs:subClassOf rdf:nodeID="genid36"/>
+        <rdfs:subClassOf rdf:nodeID="genid38"/>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ppeo/ppeo.owl#investigation</rdfs:isDefinedBy>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid9">
+    <owl:Restriction rdf:nodeID="genid14">
         <owl:onProperty rdf:resource="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#hasDataFile"/>
         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
         <owl:onClass rdf:resource="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#DataFile"/>
     </owl:Restriction>
-    <owl:Restriction rdf:nodeID="genid11">
+    <owl:Restriction rdf:nodeID="genid16">
         <owl:onProperty rdf:resource="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#hasAssociatedPublication"/>
         <owl:someValuesFrom>
             <rdfs:Datatype>
@@ -444,7 +489,7 @@
             </rdfs:Datatype>
         </owl:someValuesFrom>
     </owl:Restriction>
-    <owl:Restriction rdf:nodeID="genid16">
+    <owl:Restriction rdf:nodeID="genid21">
         <owl:onProperty rdf:resource="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#hasIdentifier"/>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
         <owl:onDataRange>
@@ -456,37 +501,37 @@
             </rdfs:Datatype>
         </owl:onDataRange>
     </owl:Restriction>
-    <owl:Restriction rdf:nodeID="genid21">
+    <owl:Restriction rdf:nodeID="genid26">
         <owl:onProperty rdf:resource="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#hasLicense"/>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
         <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:Restriction>
-    <owl:Restriction rdf:nodeID="genid23">
+    <owl:Restriction rdf:nodeID="genid28">
         <owl:onProperty rdf:resource="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#hasMIAFPEVersion"/>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
         <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:Restriction>
-    <owl:Restriction rdf:nodeID="genid25">
+    <owl:Restriction rdf:nodeID="genid30">
         <owl:onProperty rdf:resource="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#hasName"/>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
         <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:Restriction>
-    <owl:Restriction rdf:nodeID="genid27">
+    <owl:Restriction rdf:nodeID="genid32">
         <owl:onProperty rdf:resource="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#hasVersion"/>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
         <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:Restriction>
-    <owl:Restriction rdf:nodeID="genid29">
+    <owl:Restriction rdf:nodeID="genid34">
         <owl:onProperty rdf:resource="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#hasDescription"/>
         <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
         <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:Restriction>
-    <owl:Restriction rdf:nodeID="genid31">
+    <owl:Restriction rdf:nodeID="genid36">
         <owl:onProperty rdf:resource="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#hasPublicReleaseDate"/>
         <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
         <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     </owl:Restriction>
-    <owl:Restriction rdf:nodeID="genid33">
+    <owl:Restriction rdf:nodeID="genid38">
         <owl:onProperty rdf:resource="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#hasSubmissionDate"/>
         <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
         <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
@@ -494,14 +539,14 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#Investigation"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid9"/>
+        <owl:annotatedTarget rdf:nodeID="genid14"/>
         <rdfs:comment xml:lang="en">File identifier (from DataFile) on Investigation Level, e.g. README Files (In case of more than 1 use semicolon-separated format).</rdfs:comment>
         <rdfs:label xml:lang="en">Investigation Level File</rdfs:label>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#Investigation"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid11"/>
+        <owl:annotatedTarget rdf:nodeID="genid16"/>
         <rdfs:comment xml:lang="en">An identifier for a literature publication where the investigation is described. Use of DOIs is recommended (In case of more than 1 use semicolon-separated format)..</rdfs:comment>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http:/purl.org/ppeo/ppeo.owl#hasAssociatedPublication</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">Associated Publication</rdfs:label>
@@ -509,7 +554,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#Investigation"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid16"/>
+        <owl:annotatedTarget rdf:nodeID="genid21"/>
         <rdfs:comment xml:lang="en">Identifier comprising the unique name of the institution/database hosting the submission of the investigation data, and the accession number of the investigation in that institution.</rdfs:comment>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http:/purl.org/ppeo/ppeo.owl#hasIdentifier</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">Investigation Unique Identifier</rdfs:label>
@@ -517,7 +562,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#Investigation"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid21"/>
+        <owl:annotatedTarget rdf:nodeID="genid26"/>
         <rdfs:comment xml:lang="en">License for the reuse of the data associated with this investigation. The Creative Commons licenses cover most use cases and are recommended.</rdfs:comment>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http:/purl.org/ppeo/ppeo.owl#hasLicense</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">License</rdfs:label>
@@ -525,14 +570,14 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#Investigation"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid23"/>
+        <owl:annotatedTarget rdf:nodeID="genid28"/>
         <rdfs:comment xml:lang="en">The version of MIAFPE used. Different MIAFPE Versions are compatible with different MIAPPE Versions.</rdfs:comment>
         <rdfs:label xml:lang="en">MIAFPE Version</rdfs:label>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#Investigation"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid25"/>
+        <owl:annotatedTarget rdf:nodeID="genid30"/>
         <rdfs:comment xml:lang="en">Human-readable string summarizing the investigation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http:/purl.org/ppeo/ppeo.owl#hasName</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">Investigation Title</rdfs:label>
@@ -540,14 +585,14 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#Investigation"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid27"/>
+        <owl:annotatedTarget rdf:nodeID="genid32"/>
         <rdfs:comment xml:lang="en">The version of the Dataset.</rdfs:comment>
         <rdfs:label xml:lang="en">Dataset Version</rdfs:label>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#Investigation"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid29"/>
+        <owl:annotatedTarget rdf:nodeID="genid34"/>
         <rdfs:comment xml:lang="en">Human-readable text describing the investigation in more detail.</rdfs:comment>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http:/purl.org/ppeo/ppeo.owl#hasDescription</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">Investigation Description</rdfs:label>
@@ -555,7 +600,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#Investigation"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid31"/>
+        <owl:annotatedTarget rdf:nodeID="genid36"/>
         <rdfs:comment xml:lang="en">Date of first public release of the dataset presently being described.</rdfs:comment>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http:/purl.org/ppeo/ppeo.owl#hasPublicReleaseDate</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">Public Release Date</rdfs:label>
@@ -563,7 +608,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#Investigation"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid33"/>
+        <owl:annotatedTarget rdf:nodeID="genid38"/>
         <rdfs:comment xml:lang="en">Date of submission of the dataset presently being described to a host repository.</rdfs:comment>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http:/purl.org/ppeo/ppeo.owl#hasSubmissionDate</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">Submission Date</rdfs:label>
@@ -573,14 +618,34 @@
 
     <!-- https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#Location -->
 
-    <owl:Class rdf:about="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#Location"/>
+    <owl:Class rdf:about="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#Location">
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ppeo/ppeo.owl#location</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#MaterialSource -->
+
+    <owl:Class rdf:about="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#MaterialSource">
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ppeo/ppeo.owl#material_source</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#Method -->
+
+    <owl:Class rdf:about="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#Method">
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ppeo/ppeo.owl#method</rdfs:isDefinedBy>
+    </owl:Class>
     
 
 
     <!-- https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#ObservedProperty -->
 
     <owl:Class rdf:about="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#ObservedProperty">
+        <owl:equivalentClass rdf:resource="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#ObservedVariable"/>
         <rdfs:subClassOf rdf:resource="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#Property"/>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/ns/sosa/observedProperty</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -589,6 +654,7 @@
 
     <owl:Class rdf:about="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#ObservedVariable">
         <rdfs:subClassOf rdf:resource="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#ObservedProperty"/>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ppeo/ppeo.owl#observed_variable</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -603,7 +669,9 @@
 
     <!-- https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#Person -->
 
-    <owl:Class rdf:about="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#Person"/>
+    <owl:Class rdf:about="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#Person">
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ppeo/ppeo.owl#person</rdfs:isDefinedBy>
+    </owl:Class>
     
 
 
@@ -615,13 +683,29 @@
 
     <!-- https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#Procedure -->
 
-    <owl:Class rdf:about="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#Procedure"/>
+    <owl:Class rdf:about="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#Procedure">
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/ns/sosa/Procedure</rdfs:isDefinedBy>
+    </owl:Class>
     
 
 
     <!-- https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#Property -->
 
-    <owl:Class rdf:about="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#Property"/>
+    <owl:Class rdf:about="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#Property">
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/ns/ssn/Property</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#Role -->
+
+    <owl:Class rdf:about="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#Role"/>
+    
+
+
+    <!-- https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#Sample -->
+
+    <owl:Class rdf:about="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#Sample"/>
     
 
 
@@ -642,43 +726,44 @@
     <!-- https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#Study -->
 
     <owl:Class rdf:about="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#Study">
-        <rdfs:subClassOf rdf:nodeID="genid35"/>
-        <rdfs:subClassOf rdf:nodeID="genid37"/>
-        <rdfs:subClassOf rdf:nodeID="genid39"/>
-        <rdfs:subClassOf rdf:nodeID="genid41"/>
-        <rdfs:subClassOf rdf:nodeID="genid43"/>
-        <rdfs:subClassOf rdf:nodeID="genid45"/>
+        <rdfs:subClassOf rdf:nodeID="genid40"/>
+        <rdfs:subClassOf rdf:nodeID="genid42"/>
+        <rdfs:subClassOf rdf:nodeID="genid44"/>
+        <rdfs:subClassOf rdf:nodeID="genid46"/>
+        <rdfs:subClassOf rdf:nodeID="genid48"/>
         <rdfs:subClassOf rdf:nodeID="genid50"/>
-        <rdfs:subClassOf rdf:nodeID="genid52"/>
-        <rdfs:subClassOf rdf:nodeID="genid54"/>
-        <rdfs:subClassOf rdf:nodeID="genid56"/>
+        <rdfs:subClassOf rdf:nodeID="genid55"/>
+        <rdfs:subClassOf rdf:nodeID="genid57"/>
+        <rdfs:subClassOf rdf:nodeID="genid59"/>
+        <rdfs:subClassOf rdf:nodeID="genid61"/>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ppeo/ppeo.owl#study</rdfs:isDefinedBy>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid35">
+    <owl:Restriction rdf:nodeID="genid40">
         <owl:onProperty rdf:resource="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#hasContactInstitution"/>
         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
         <owl:onClass rdf:resource="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#Institution"/>
     </owl:Restriction>
-    <owl:Restriction rdf:nodeID="genid37">
+    <owl:Restriction rdf:nodeID="genid42">
         <owl:onProperty rdf:resource="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#hasDataFile"/>
         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
         <owl:onClass rdf:resource="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#DataFile"/>
     </owl:Restriction>
-    <owl:Restriction rdf:nodeID="genid39">
+    <owl:Restriction rdf:nodeID="genid44">
         <owl:onProperty rdf:resource="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#hasExperimentalDesign"/>
         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
         <owl:onClass rdf:resource="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#ExperimentalDesign"/>
     </owl:Restriction>
-    <owl:Restriction rdf:nodeID="genid41">
+    <owl:Restriction rdf:nodeID="genid46">
         <owl:onProperty rdf:resource="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#hasLocation"/>
         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
         <owl:onClass rdf:resource="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#Location"/>
     </owl:Restriction>
-    <owl:Restriction rdf:nodeID="genid43">
+    <owl:Restriction rdf:nodeID="genid48">
         <owl:onProperty rdf:resource="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#partOf"/>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
         <owl:onClass rdf:resource="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#Investigation"/>
     </owl:Restriction>
-    <owl:Restriction rdf:nodeID="genid45">
+    <owl:Restriction rdf:nodeID="genid50">
         <owl:onProperty rdf:resource="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#hasIdentifier"/>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
         <owl:onDataRange>
@@ -690,22 +775,22 @@
             </rdfs:Datatype>
         </owl:onDataRange>
     </owl:Restriction>
-    <owl:Restriction rdf:nodeID="genid50">
+    <owl:Restriction rdf:nodeID="genid55">
         <owl:onProperty rdf:resource="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#hasName"/>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
         <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:Restriction>
-    <owl:Restriction rdf:nodeID="genid52">
+    <owl:Restriction rdf:nodeID="genid57">
         <owl:onProperty rdf:resource="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#hasStartDateTime"/>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
         <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     </owl:Restriction>
-    <owl:Restriction rdf:nodeID="genid54">
+    <owl:Restriction rdf:nodeID="genid59">
         <owl:onProperty rdf:resource="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#hasDescription"/>
         <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
         <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:Restriction>
-    <owl:Restriction rdf:nodeID="genid56">
+    <owl:Restriction rdf:nodeID="genid61">
         <owl:onProperty rdf:resource="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#hasEndDateTime"/>
         <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
         <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
@@ -713,7 +798,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#Study"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid35"/>
+        <owl:annotatedTarget rdf:nodeID="genid40"/>
         <rdfs:comment xml:lang="en">Identifier from Institution Table (In case of more than 1 use semicolon-separated format).</rdfs:comment>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http:/purl.org/ppeo/ppeo.owl#hasContactInstitution</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">Contact Institution</rdfs:label>
@@ -721,7 +806,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#Study"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid37"/>
+        <owl:annotatedTarget rdf:nodeID="genid42"/>
         <rdfs:comment xml:lang="en">Link (identifier) to an Data_File Instance (In case of more than 1 use semicolon-separated format).</rdfs:comment>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http:/purl.org/ppeo/ppeo.owl#hasDataFile</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">Study Level Files</rdfs:label>
@@ -729,7 +814,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#Study"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid39"/>
+        <owl:annotatedTarget rdf:nodeID="genid44"/>
         <rdfs:comment xml:lang="en">Identifier of an Experimental Design Instance (In case of more than 1 use semicolon-separated format).</rdfs:comment>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http:/purl.org/ppeo/ppeo.owl#hasExperimentalDesign</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">Experimental Design</rdfs:label>
@@ -737,7 +822,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#Study"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid41"/>
+        <owl:annotatedTarget rdf:nodeID="genid46"/>
         <rdfs:comment xml:lang="en">Identifier of an Location Object (In case of more than 1 use semicolon-separated format).</rdfs:comment>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http:/purl.org/ppeo/ppeo.owl#hasLocation</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">Location</rdfs:label>
@@ -745,13 +830,13 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#Study"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid43"/>
+        <owl:annotatedTarget rdf:nodeID="genid48"/>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/ppeo/PPEO.owl#partOf</rdfs:isDefinedBy>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#Study"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid45"/>
+        <owl:annotatedTarget rdf:nodeID="genid50"/>
         <rdfs:comment xml:lang="en">Unique Identifier which acts as unambiguous link between Instances.</rdfs:comment>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http:/purl.org/ppeo/ppeo.owl#hasIdentifier</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">Study Unique Identifier</rdfs:label>
@@ -759,7 +844,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#Study"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid50"/>
+        <owl:annotatedTarget rdf:nodeID="genid55"/>
         <rdfs:comment xml:lang="en">Title of the Study.</rdfs:comment>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http:/purl.org/ppeo/ppeo.owl#hasName</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">Study Title</rdfs:label>
@@ -767,7 +852,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#Study"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid52"/>
+        <owl:annotatedTarget rdf:nodeID="genid57"/>
         <rdfs:comment xml:lang="en">Date and, if relevant, time when the experiment started. Date/Time (ISO 8601, optional time zone)</rdfs:comment>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http:/purl.org/ppeo/ppeo.owl#hasStartDateTime</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">Start Date</rdfs:label>
@@ -775,7 +860,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#Study"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid54"/>
+        <owl:annotatedTarget rdf:nodeID="genid59"/>
         <rdfs:comment xml:lang="en">Human-readable text describing the study in more detail.</rdfs:comment>
         <rdfs:isDefinedBy>http:/purl.org/ppeo/ppeo.owl#hasDescription</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">Study Description</rdfs:label>
@@ -783,7 +868,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/gryvity/MIAFPE/tree/master/ontology/miappexsosa.owl#Study"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid56"/>
+        <owl:annotatedTarget rdf:nodeID="genid61"/>
         <rdfs:comment xml:lang="en">Date and, if relevant, time when the experiment ended. Date/Time (ISO 8601, optional time zone)</rdfs:comment>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http:/purl.org/ppeo/ppeo.owl#hasEndDateTime</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">End Date</rdfs:label>
