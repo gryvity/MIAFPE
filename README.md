@@ -1,6 +1,8 @@
 # Minimum Information About Field Phenotyping Experiments (MIAFPE)
 ## *Harvest Knowledge from Data*
 
+Author: Lars Grygosch (Forschungszentrum Jülich - IBG-2: Plant Science)
+
 ---
 
 ## Table of Contents
@@ -164,6 +166,8 @@ The **Semantic Sensor Network Ontology (SSN)** and its lightweight core, **SOSA*
 SSN/SOSA are the W3C recommendation for sensor metadata and are widely adopted in IoT, environmental monitoring, and smart agriculture contexts. The full specification is available at [https://www.w3.org/TR/vocab-ssn/](https://www.w3.org/TR/vocab-ssn/).
 
 ### The Merged Ontology: `miappeXsosa`
+
+![miappeXsosa data model](ontology/miappeXsosa_dm.svg)
 
 To bridge the two worlds — agronomic experiment description and sensor system description — this project merges PPEO and SSN/SOSA into a single ontology: **`miappeXsosa`**.
 
