@@ -1,0 +1,79 @@
+{
+  "@id": "",
+  "@type": "ppeo:observedVariable",
+  "rdfs:label": "Observed Variable",
+
+  "ppeo:hasName": {
+    "@type": "xsd:string",
+    "rdfs:label": "Variable name*",
+    "rdfs:comment": "Human-readable name of the observed variable (required).",
+    "@value": ""
+  },
+
+  "ppeo:hasDescription": {
+    "@type": "xsd:string",
+    "rdfs:label": "Variable description",
+    "rdfs:comment": "Narrative description of what is measured.",
+    "@value": ""
+  },
+
+  "ppeo:hasTrait": {
+    "@type": "xsd:string",
+    "rdfs:label": "Trait",
+    "rdfs:comment": "Biological/physical trait the variable represents (e.g., plant height).",
+    "@value": ""
+  },
+
+  "ppeo:hasMethod": {
+    "@type": "xsd:string",
+    "rdfs:label": "Method",
+    "rdfs:comment": "How the variable is measured or derived (protocol, algorithm).",
+    "@value": ""
+  },
+
+  "ppeo:hasScale": {
+    "@type": "xsd:string",
+    "rdfs:label": "Scale",
+    "rdfs:comment": "Nominal, ordinal, ratio, index, etc.",
+    "@value": ""
+  },
+
+  "ppeo:hasUnit": {
+    "@type": "xsd:string",
+    "rdfs:label": "Unit",
+    "rdfs:comment": "Measurement unit, if applicable (e.g., cm, °C, NDVI).",
+    "@value": ""
+  },
+
+  "ppeo:hasDataType": {
+    "@type": "xsd:string",
+    "rdfs:label": "Data type",
+    "rdfs:comment": "Expected value type (e.g., integer, float, string, boolean).",
+    "@value": ""
+  },
+
+  "ppeo:isPartOf": {
+    "@type": "ppeo:observationUnit",
+    "rdfs:label": "Part of Observation Unit*",
+    "rdfs:comment": "Link to the parent Observation Unit by @id. Variables can be part of multiple units.",
+    "@graph": [
+
+    ]
+  },
+
+  "sosa:isObservedBy": {
+    "@type": "sosa:Sensor",
+    "rdfs:label": "Observed by Sensor",
+    "rdfs:comment": "Bridge via SOSA: link the sensor(s) used to obtain/derive this variable.",
+    "@graph": [
+
+    ]
+  },
+
+  "ppeo:hasRelatedSynonym": {
+    "@type": "sosa:ObservableProperty",
+    "rdfs:label": "Synonym",
+    "rdfs:comment": "Observed Variable corresponds conceptually to a SOSA ObservableProperty.",
+    "@id": ""
+  }
+}

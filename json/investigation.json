@@ -1,0 +1,71 @@
+{
+    "@version" : "1.0",
+    "@context" : {
+        "schema" : "https://schema.org/",
+        "ppeo" : "http://purl.org/ppeo/PPEO.owl#",
+        "owl" : "https://www.w3.org/2002/07/owl#",
+        "rdf" : "https://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "dc" : "http://purl.org/dc/elements/1.1/",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "sosa": "http://www.w3.org/ns/sosa/"
+    },
+
+    "@id" : "",
+    "@type" : "ppeo:investigation",
+    "rdfs:label" : "Investigation",
+
+
+    "ppeo:hasName" : {
+        "@type" : "xsd:string",
+        "rdfs:label" : "Investigation title*",
+        "@value" : ""
+    },
+
+    "ppeo:hasDescription" : {
+        "@type" : "xsd:string",
+        "rdfs:label" : "Investigation description",
+        "@value" : ""
+    },
+
+    "ppeo:hasMIAPPEVersion" : {
+        "@type" : "xsd:string",
+        "rdfs:label" : "MIAPPE version*",
+        "rdfs:comment" : "",
+        "@value" : ""
+    },
+
+    
+    "pppeo:hasSubmissionDate": {
+        "@type " : "owl:FunctionalProperty",
+        "rdfs:label" : "Submission Date",
+        "@value" : ""
+    },
+
+    "ppeo:hasPublicReleaseDate" : {
+        "@type " : "owl:FunctionalProperty",
+        "rdfs:label" : "Public Release Date",
+        "@value" : ""
+    },
+
+    "ppeo:hasLicense" : {
+        "@type" : "owl:FunctionalProperty",
+        "rdfs:label" : "License",
+        "rdfs:comment" : "",
+        "@value" : ""
+    },
+
+    "ppeo:hasAssociatedPublication" : {
+        "@type" : ["xsd:string", "xsd:anyURI"],
+        "rdfs:label" : "Associated publication",
+        "@value" : ""
+    },
+
+    "ppeo:hasPart" : {
+        "@type" : "ppeo:Study",
+        "@graph" : [
+
+        ]
+    }
+
+}

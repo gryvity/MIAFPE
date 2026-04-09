@@ -1,0 +1,81 @@
+{
+  "@id": "",
+  "@type": "ppeo:observationUnit",
+  "rdfs:label": "Observation Unit",
+
+  "ppeo:hasName": {
+    "@type": "xsd:string",
+    "rdfs:label": "Observation Unit ID/Name*",
+    "rdfs:comment": "Unique identifier or human-readable label for the observation unit (required).",
+    "@value": ""
+  },
+
+  "ppeo:hasDescription": {
+    "@type": "xsd:string",
+    "rdfs:label": "Observation Unit description",
+    "rdfs:comment": "Narrative description (e.g., plot, plant, pot) and any notable details.",
+    "@value": ""
+  },
+
+  "ppeo:hasObservationUnitType": {
+    "@type": "xsd:string",
+    "rdfs:label": "Observation Unit type",
+    "rdfs:comment": "Type/category such as plot, subplot, plant, pot, tray, etc.",
+    "@value": ""
+  },
+
+  "ppeo:hasSpatialDistribution": {
+    "@type": "xsd:string",
+    "rdfs:label": "Spatial distribution",
+    "rdfs:comment": "Spatial layout or location info (e.g., block/row/column; coordinates; polygon reference).",
+    "@value": ""
+  },
+
+  "ppeo:hasTemporalDistribution": {
+    "@type": "xsd:string",
+    "rdfs:label": "Temporal distribution",
+    "rdfs:comment": "Temporal extent or schedule relevant to this observation unit (e.g., sowing-to-harvest window).",
+    "@value": ""
+  },
+
+  "ppeo:hasGeographicLocation": {
+    "@type": "xsd:string",
+    "rdfs:label": "Geographic location",
+    "rdfs:comment": "Place name, site code, or geodetic coordinates for the unit (if applicable).",
+    "@value": ""
+  },
+
+  "ppeo:isPartOf": {
+    "@type": "ppeo:study",
+    "rdfs:label": "Part of Study*",
+    "rdfs:comment": "Link to the parent Study by @id.",
+    "@id": ""
+  },
+
+  "sosa:hasResults": {
+    "@type": "ppeo:data_file",
+    "rdfs:label": "Results for Observation Unit",
+    "rdfs:comment": "",
+    "@graph": [
+    
+  
+    ]
+  },
+
+  "sosa:observedProperty": {
+    "@type": "ppeo:observedVariable",
+    "rdfs:label": "Observed Variable",
+    "rdfs:comment": "Link to the observed variable by @id.",
+    "@graph": [
+    
+  
+    ]
+  },
+
+  "ppeo:hasRelatedSynonym": {
+    "@type": "sosa:Observation",
+    "rdfs:label": "Synonym",
+    "rdfs:comment": "Observation Unit corresponds conceptually to a SOSA Observation.",
+    "@id": ""
+  }
+}

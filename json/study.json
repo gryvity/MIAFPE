@@ -1,0 +1,77 @@
+{
+
+  "@id": "",
+  "@type": "ppeo:study",
+  "rdfs:label": "Study",
+
+  "ppeo:hasName": {
+    "@type": "xsd:string",
+    "rdfs:label": "Study title*",
+    "rdfs:comment": "Human-readable title of the study (required).",
+    "@value": ""
+  },
+
+  "ppeo:hasDescription": {
+    "@type": "xsd:string",
+    "rdfs:label": "Study description",
+    "rdfs:comment": "Narrative description of the study scope.",
+    "@value": ""
+  },
+
+  "ppeo:hasObjective": {
+    "@type": "xsd:string",
+    "rdfs:label": "Study objective",
+    "rdfs:comment": "Main scientific objective or hypothesis.",
+    "@value": ""
+  },
+
+  "ppeo:hasExperimentalDesign": {
+    "@type": "xsd:string",
+    "rdfs:label": "Experimental design",
+    "rdfs:comment": "Design summary (e.g., RCBD, split-plot, observational).",
+    "@value": ""
+  },
+
+  "ppeo:hasStartDate": {
+    "@type": "xsd:date",
+    "rdfs:label": "Start date",
+    "rdfs:comment": "ISO 8601 date (YYYY-MM-DD).",
+    "@value": ""
+  },
+
+  "ppeo:hasEndDate": {
+    "@type": "xsd:date",
+    "rdfs:label": "End date",
+    "rdfs:comment": "ISO 8601 date (YYYY-MM-DD).",
+    "@value": ""
+  },
+
+  "ppeo:hasGeographicLocation": {
+    "@type": "xsd:string",
+    "rdfs:label": "Geographic location",
+    "rdfs:comment": "Place name, coordinates, or site identifier.",
+    "@value": ""
+  },
+
+  "ppeo:hasContact": {
+    "@type": ["xsd:string", "xsd:anyURI"],
+    "rdfs:label": "Study contact",
+    "rdfs:comment": "Responsible person/team or contact URI.",
+    "@value": ""
+  },
+
+  "ppeo:isPartOf": {
+    "@type": "ppeo:investigation",
+    "rdfs:label": "Part of Investigation*",
+    "rdfs:comment": "Link to parent Investigation by @id.",
+    "@id": ""
+  },
+
+  "ppeo:hasPart": {
+    "rdfs:label": "Study components",
+    "rdfs:comment": "Inline or reference Observation Units and Observations. Mixed typing allowed in @graph.",
+    "@graph": [
+      
+    ]
+  }
+}

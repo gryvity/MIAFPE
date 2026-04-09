@@ -1,0 +1,72 @@
+{
+  "@id": "",
+  "@type": "sosa:Platform",
+  "rdfs:label": "Platform",
+
+  "ppeo:hasName": {
+    "@type": "xsd:string",
+    "rdfs:label": "Platform Name*",
+    "rdfs:comment": "Human-readable name of the platform (e.g., UAV model).",
+    "@value": ""
+  },
+
+  "ppeo:hasDescription": {
+    "@type": "xsd:string",
+    "rdfs:label": "Platform Description",
+    "rdfs:comment": "Narrative description of the platform and its role.",
+    "@value": ""
+  },
+
+  "ppeo:hasPlatformType": {
+    "@type": "xsd:string",
+    "rdfs:label": "Platform Type",
+    "rdfs:comment": "E.g., UAV, satellite, tractor, gantry, tripod, etc.",
+    "@value": ""
+  },
+
+  "ppeo:hasAccessionNumber": {
+    "@type": "xsd:string",
+    "rdfs:label": "Platform accession number",
+    "rdfs:comment": "Catalog, registry, or inventory ID if applicable.",
+    "@value": ""
+  },
+
+  "ppeo:hasManufacturer": {
+    "@type": "xsd:string",
+    "rdfs:label": "Manufacturer",
+    "rdfs:comment": "Name of the manufacturer.",
+    "@value": ""
+  },
+
+  "ppeo:hasModel": {
+    "@type": "xsd:string",
+    "rdfs:label": "Platform model",
+    "rdfs:comment": "Manufacturer model designation.",
+    "@value": ""
+  },
+
+  "ppeo:isPartOf": {
+    "@type": "ppeo:study",
+    "rdfs:label": "Part of Study",
+    "rdfs:comment": "Optional link to the parent Study by @id.",
+    "@id": ""
+  },
+
+  "sosa:hosts": {
+    "@type": "sosa:Sensor",
+    "rdfs:label": "Hosted Sensors",
+    "rdfs:comment": "Sensors mounted on or otherwise hosted by this platform.",
+    "@graph": [
+      
+    ]
+  },
+
+  "ppeo:hasPart": {
+    "@type": "ppeo:dataFile",
+    "rdfs:label": "Associated Files",
+    "rdfs:comment": "Technical specs, calibration sheets, manuals, etc., that describe this platform.",
+    "@graph": [
+      
+    ]
+  }
+}

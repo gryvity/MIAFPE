@@ -1,0 +1,81 @@
+{
+  "@id": "",
+  "@type": "sosa:Sensor",
+  "rdfs:label": "Sensor",
+
+  "ppeo:hasName": {
+    "@type": "xsd:string",
+    "rdfs:label": "Sensor name*",
+    "rdfs:comment": "Human-readable sensor name.",
+    "@value": ""
+  },
+
+  "ppeo:hasDescription": {
+    "@type": "xsd:string",
+    "rdfs:label": "Sensor Description",
+    "rdfs:comment": "Narrative description of sensor characteristics/capabilities.",
+    "@value": ""
+  },
+
+  "ppeo:hasSensorType": {
+    "@type": "xsd:string",
+    "rdfs:label": "Sensor Type",
+    "rdfs:comment": "E.g., RGB camera, LiDAR, hyperspectral, thermometer, etc.",
+    "@value": ""
+  },
+
+  "ppeo:hasAccessionNumber": {
+    "@type": "xsd:string",
+    "rdfs:label": "Sensor accession number",
+    "rdfs:comment": "Catalog or registry ID if applicable.",
+    "@value": ""
+  },
+
+  "ppeo:hasManufacturer": {
+    "@type": "xsd:string",
+    "rdfs:label": "Manufacturer",
+    "rdfs:comment": "Name of the manufacturer.",
+    "@value": ""
+  },
+
+  "ppeo:hasModel": {
+    "@type": "xsd:string",
+    "rdfs:label": "Model",
+    "rdfs:comment": "Manufacturer model designation.",
+    "@value": ""
+  },
+
+  "ppeo:isPartOf": {
+    "@type": "ppeo:study",
+    "rdfs:label": "Part of Study",
+    "rdfs:comment": "Optional link to the parent Study by @id.",
+    "@id": ""
+  },
+
+  "sosa:isHostedBy": {
+    "@type": "sosa:Platform",
+    "rdfs:label": "Hosted by Platform",
+    "rdfs:comment": "Platform on/with which this sensor is deployed.",
+    "@graph": [
+     
+    ]
+  },
+
+  "sosa:observes": {
+    "@type": "sosa:ObservableProperty",
+    "rdfs:label": "Observes (properties / variables)",
+    "rdfs:comment": "Link to observed variables (pair with your observedVariable via ppeo<->sosa mapping).",
+    "@graph": [
+     
+    ]
+  },
+
+  "ppeo:hasPart": {
+    "@type": "ppeo:dataFile",
+    "rdfs:label": "Associated Files",
+    "rdfs:comment": "Datasheets, calibration files, spectral response curves, firmware notes, etc., that describe this sensor.",
+    "@graph": [
+    
+    ]
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "@id": "",
+  "@type": "ppeo:dataFile",
+  "rdfs:label": "Data File",
+
+  "ppeo:isPartOf": {
+    "@type": "ppeo:study",
+    "rdfs:label": "Part of Study*",
+    "rdfs:comment": "Links this data file to one or more Study objects by @id (MIAPPE: Study unique ID).",
+    "@graph": [
+
+    ]
+  },
+
+  "ppeo:hasName": {
+    "@type": "xsd:string",
+    "rdfs:label": "Data file title",
+    "rdfs:comment": "Optional human-readable name for the file/dataset.",
+    "@value": ""
+  },
+
+  "ppeo:hasDescription": {
+    "@type": "xsd:string",
+    "rdfs:label": "Data file description",
+    "rdfs:comment": "Short description of the file contents/format (MIAPPE: Data file description).",
+    "@value": ""
+  },
+
+  "ppeo:hasVersion": {
+    "@type": "xsd:string",
+    "rdfs:label": "Data file version",
+    "rdfs:comment": "Version of the dataset (MIAPPE: Data file version).",
+    "@value": ""
+  },
+
+  "ppeo:hasPrimaryLink": {
+    "@type": ["xsd:anyURI", "xsd:string"],
+    "rdfs:label": "Data file link",
+    "rdfs:comment": "Primary link or path to the file/digital object (URL or filename as per MIAPPE).",
+    "@value": ""
+  },
+
+
+
+
+
+  "sosa:isResultOf": {
+    "rdfs:label": "Result of",
+    "rdfs:comment": "Bridge via SOSA: link back to the Observation(s) or Observation Unit(s) that produced this file.",
+    "@graph": [
+      
+    ]
+  },
+
+  "sosa:observedProperty": {
+    "@type": "ppeo:observedVariable",
+    "rdfs:label": "Observed Variable(s) covered",
+    "rdfs:comment": "Optional: link variables included in this file (useful for validation/search).",
+    "@graph": [
+      { "@id": "obsVar:OV-001", "@type": "ppeo:observedVariable" }
+    ]
+  },
+
+  "ppeo:hasRelatedSynonym": {
+    "@type": "sosa:Result",
+    "rdfs:label": "Synonym",
+    "rdfs:comment": "Data File corresponds conceptually to a SOSA Result.",
+    "@id": ""
+  }
+}
